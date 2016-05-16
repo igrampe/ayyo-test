@@ -26,7 +26,8 @@
 
 - (void)openMovieAnimated:(BOOL)animated
 {
-    [self.view.navigationController pushViewController:self.movieWireframe.view animated:animated];
+    [self.view.navigationController pushViewController:self.movieWireframe.view
+                                              animated:animated];
 }
 
 @end

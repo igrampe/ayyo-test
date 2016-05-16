@@ -10,6 +10,7 @@
 
 #import "AppDelegate.h"
 #import "AYRootAssembly.h"
+#import "AYAppConfiguratorImp.h"
 
 @implementation AYAppAssembly
 
@@ -17,16 +18,23 @@
 {
     return [TyphoonDefinition withClass:[AppDelegate class]
                           configuration:^(TyphoonDefinition *definition)
-            {
-                [definition injectProperty:@selector(window) with:self.mainWindow];
-                [definition injectProperty:@selector(rootWireframe) with:[self.rootAssembly wireframeRoot]];
-            }];
+    {
+        [definition injectProperty:@selector(window) with:self.mainWindow];
+        [definition injectProperty:@selector(appConfigurator) with:self.appConfigurator];
+        [definition injectProperty:@selector(rootWireframe) with:[self.rootAssembly wireframeRoot]];
+    }];
 }
 
 - (UIWindow *)mainWindow
 {
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     return window;
+}
+
+- (AYAppConfiguratorImp *)appConfigurator
+{
+    AYAppConfiguratorImp *configurator = [AYAppConfiguratorImp new];
+    return configurator;
 }
 
 @end

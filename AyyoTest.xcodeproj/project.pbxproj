@@ -37,6 +37,7 @@
 		539F0C6B1CEA40B600E9B47E /* UIViewController+APL.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C591CEA40B600E9B47E /* UIViewController+APL.m */; };
 		539F0C6C1CEA40B600E9B47E /* APLServiceLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C5D1CEA40B600E9B47E /* APLServiceLocator.m */; };
 		539F0C6F1CEA40D400E9B47E /* ColorScheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 539F0C6D1CEA40D400E9B47E /* ColorScheme.plist */; };
+		539F0C731CEA4E2400E9B47E /* AYAppConfiguratorImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C721CEA4E2400E9B47E /* AYAppConfiguratorImp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,9 @@
 		539F0C5E1CEA40B600E9B47E /* APLWireframeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLWireframeProtocol.h; sourceTree = "<group>"; };
 		539F0C6D1CEA40D400E9B47E /* ColorScheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ColorScheme.plist; sourceTree = "<group>"; };
 		539F0C6E1CEA40D400E9B47E /* ColorSchemeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorSchemeHeader.h; sourceTree = "<group>"; };
+		539F0C701CEA4E1400E9B47E /* AYAppConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AYAppConfigurator.h; sourceTree = "<group>"; };
+		539F0C711CEA4E2400E9B47E /* AYAppConfiguratorImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYAppConfiguratorImp.h; sourceTree = "<group>"; };
+		539F0C721CEA4E2400E9B47E /* AYAppConfiguratorImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYAppConfiguratorImp.m; sourceTree = "<group>"; };
 		64EA973F687D4FECA7EED9C5 /* libPods-AyyoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AyyoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2F9302A567EFB65975BF59 /* Pods-AyyoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyyoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AyyoTest/Pods-AyyoTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +174,9 @@
 				539F0BF81CEA331700E9B47E /* AppDelegate.m */,
 				539F0C0C1CEA33E600E9B47E /* AYAppAssembly.h */,
 				539F0C0D1CEA33E600E9B47E /* AYAppAssembly.m */,
+				539F0C701CEA4E1400E9B47E /* AYAppConfigurator.h */,
+				539F0C711CEA4E2400E9B47E /* AYAppConfiguratorImp.h */,
+				539F0C721CEA4E2400E9B47E /* AYAppConfiguratorImp.m */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -454,6 +461,7 @@
 				539F0C6B1CEA40B600E9B47E /* UIViewController+APL.m in Sources */,
 				539F0C251CEA393F00E9B47E /* AYStartViewController.m in Sources */,
 				539F0C601CEA40B600E9B47E /* APLColorScheme.m in Sources */,
+				539F0C731CEA4E2400E9B47E /* AYAppConfiguratorImp.m in Sources */,
 				539F0C0E1CEA33E600E9B47E /* AYAppAssembly.m in Sources */,
 				539F0C631CEA40B600E9B47E /* APLPageControl.m in Sources */,
 				539F0C6C1CEA40B600E9B47E /* APLServiceLocator.m in Sources */,

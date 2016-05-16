@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "AYRootWireframe.h"
+#import "AYAppConfigurator.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self.appConfigurator registerColorScheme];
+    [self.appConfigurator patchUI];
     [self.rootWireframe openModuleInWindow:self.window];
     [self.window makeKeyAndVisible];
     

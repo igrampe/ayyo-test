@@ -30,8 +30,9 @@
 
 - (void)setupView
 {
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     self.openMovieButton = [UIButton newAutoLayoutView];
+    [self.openMovieButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.openMovieButton setTitle:NSLS(@"Фильм") forState:UIControlStateNormal];
     [self.openMovieButton addTarget:self.output
                              action:@selector(actionOpenMovie)
