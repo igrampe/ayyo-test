@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "AYRootWireframe.h"
+
 @interface AppDelegate ()
 
 @end
@@ -15,8 +17,11 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [self.rootWireframe openModuleInWindow:self.window];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

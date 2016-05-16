@@ -7,25 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		539F0BE11CEA322900E9B47E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0BE01CEA322900E9B47E /* main.m */; };
-		539F0BE41CEA322900E9B47E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0BE31CEA322900E9B47E /* AppDelegate.m */; };
-		539F0BE71CEA322900E9B47E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0BE61CEA322900E9B47E /* ViewController.m */; };
-		539F0BEA1CEA322900E9B47E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539F0BE81CEA322900E9B47E /* Main.storyboard */; };
-		539F0BEC1CEA322900E9B47E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539F0BEB1CEA322900E9B47E /* Assets.xcassets */; };
-		539F0BEF1CEA322900E9B47E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539F0BED1CEA322900E9B47E /* LaunchScreen.storyboard */; };
+		1A05F2E34A575280B1DA7BCA /* libPods-AyyoTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EA973F687D4FECA7EED9C5 /* libPods-AyyoTest.a */; };
+		539F0C061CEA331700E9B47E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0BF81CEA331700E9B47E /* AppDelegate.m */; };
+		539F0C071CEA331700E9B47E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539F0BFC1CEA331700E9B47E /* Assets.xcassets */; };
+		539F0C081CEA331700E9B47E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539F0BFD1CEA331700E9B47E /* LaunchScreen.storyboard */; };
+		539F0C0B1CEA331700E9B47E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C041CEA331700E9B47E /* main.m */; };
+		539F0C0E1CEA33E600E9B47E /* AYAppAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C0D1CEA33E600E9B47E /* AYAppAssembly.m */; };
+		539F0C121CEA346500E9B47E /* AYRootAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C111CEA346500E9B47E /* AYRootAssembly.m */; };
+		539F0C151CEA347000E9B47E /* AYRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C141CEA347000E9B47E /* AYRootViewController.m */; };
+		539F0C181CEA349300E9B47E /* AYRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C171CEA349300E9B47E /* AYRootWireframe.m */; };
+		539F0C241CEA393F00E9B47E /* AYStartAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C1D1CEA393F00E9B47E /* AYStartAssembly.m */; };
+		539F0C251CEA393F00E9B47E /* AYStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C1F1CEA393F00E9B47E /* AYStartViewController.m */; };
+		539F0C261CEA393F00E9B47E /* AYStartWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C231CEA393F00E9B47E /* AYStartWireframe.m */; };
+		539F0C3C1CEA39BA00E9B47E /* AYMovieAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C351CEA39BA00E9B47E /* AYMovieAssembly.m */; };
+		539F0C3D1CEA39BA00E9B47E /* AYMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C371CEA39BA00E9B47E /* AYMovieViewController.m */; };
+		539F0C3E1CEA39BA00E9B47E /* AYMovieWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C3B1CEA39BA00E9B47E /* AYMovieWireframe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02EBFB36552590F352CAF26A /* Pods-AyyoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyyoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AyyoTest/Pods-AyyoTest.release.xcconfig"; sourceTree = "<group>"; };
 		539F0BDC1CEA322900E9B47E /* AyyoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AyyoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		539F0BE01CEA322900E9B47E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		539F0BE21CEA322900E9B47E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		539F0BE31CEA322900E9B47E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		539F0BE51CEA322900E9B47E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		539F0BE61CEA322900E9B47E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		539F0BE91CEA322900E9B47E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		539F0BEB1CEA322900E9B47E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		539F0BEE1CEA322900E9B47E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		539F0BF01CEA322900E9B47E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		539F0BF71CEA331700E9B47E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		539F0BF81CEA331700E9B47E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		539F0BFC1CEA331700E9B47E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		539F0BFE1CEA331700E9B47E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		539F0C031CEA331700E9B47E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		539F0C041CEA331700E9B47E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		539F0C0C1CEA33E600E9B47E /* AYAppAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYAppAssembly.h; sourceTree = "<group>"; };
+		539F0C0D1CEA33E600E9B47E /* AYAppAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYAppAssembly.m; sourceTree = "<group>"; };
+		539F0C101CEA346500E9B47E /* AYRootAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYRootAssembly.h; sourceTree = "<group>"; };
+		539F0C111CEA346500E9B47E /* AYRootAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYRootAssembly.m; sourceTree = "<group>"; };
+		539F0C131CEA347000E9B47E /* AYRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYRootViewController.h; sourceTree = "<group>"; };
+		539F0C141CEA347000E9B47E /* AYRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYRootViewController.m; sourceTree = "<group>"; };
+		539F0C161CEA349300E9B47E /* AYRootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYRootWireframe.h; sourceTree = "<group>"; };
+		539F0C171CEA349300E9B47E /* AYRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYRootWireframe.m; sourceTree = "<group>"; };
+		539F0C191CEA351000E9B47E /* AYRootViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AYRootViewInput.h; sourceTree = "<group>"; };
+		539F0C1A1CEA351800E9B47E /* AYRootViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AYRootViewOutput.h; sourceTree = "<group>"; };
+		539F0C1C1CEA393F00E9B47E /* AYStartAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYStartAssembly.h; sourceTree = "<group>"; };
+		539F0C1D1CEA393F00E9B47E /* AYStartAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYStartAssembly.m; sourceTree = "<group>"; };
+		539F0C1E1CEA393F00E9B47E /* AYStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYStartViewController.h; sourceTree = "<group>"; };
+		539F0C1F1CEA393F00E9B47E /* AYStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYStartViewController.m; sourceTree = "<group>"; };
+		539F0C201CEA393F00E9B47E /* AYStartViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYStartViewInput.h; sourceTree = "<group>"; };
+		539F0C211CEA393F00E9B47E /* AYStartViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYStartViewOutput.h; sourceTree = "<group>"; };
+		539F0C221CEA393F00E9B47E /* AYStartWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYStartWireframe.h; sourceTree = "<group>"; };
+		539F0C231CEA393F00E9B47E /* AYStartWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYStartWireframe.m; sourceTree = "<group>"; };
+		539F0C341CEA39BA00E9B47E /* AYMovieAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYMovieAssembly.h; sourceTree = "<group>"; };
+		539F0C351CEA39BA00E9B47E /* AYMovieAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYMovieAssembly.m; sourceTree = "<group>"; };
+		539F0C361CEA39BA00E9B47E /* AYMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYMovieViewController.h; sourceTree = "<group>"; };
+		539F0C371CEA39BA00E9B47E /* AYMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYMovieViewController.m; sourceTree = "<group>"; };
+		539F0C381CEA39BA00E9B47E /* AYMovieViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYMovieViewInput.h; sourceTree = "<group>"; };
+		539F0C391CEA39BA00E9B47E /* AYMovieViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYMovieViewOutput.h; sourceTree = "<group>"; };
+		539F0C3A1CEA39BA00E9B47E /* AYMovieWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYMovieWireframe.h; sourceTree = "<group>"; };
+		539F0C3B1CEA39BA00E9B47E /* AYMovieWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYMovieWireframe.m; sourceTree = "<group>"; };
+		64EA973F687D4FECA7EED9C5 /* libPods-AyyoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AyyoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2F9302A567EFB65975BF59 /* Pods-AyyoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyyoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AyyoTest/Pods-AyyoTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +68,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A05F2E34A575280B1DA7BCA /* libPods-AyyoTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A112E2C4FD13ABAA70073B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F9302A567EFB65975BF59 /* Pods-AyyoTest.debug.xcconfig */,
+				02EBFB36552590F352CAF26A /* Pods-AyyoTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		539F0BD31CEA322900E9B47E = {
 			isa = PBXGroup;
 			children = (
 				539F0BDE1CEA322900E9B47E /* AyyoTest */,
 				539F0BDD1CEA322900E9B47E /* Products */,
+				0A112E2C4FD13ABAA70073B6 /* Pods */,
+				E32C342E7A01A72506869D06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,25 +105,128 @@
 		539F0BDE1CEA322900E9B47E /* AyyoTest */ = {
 			isa = PBXGroup;
 			children = (
-				539F0BE21CEA322900E9B47E /* AppDelegate.h */,
-				539F0BE31CEA322900E9B47E /* AppDelegate.m */,
-				539F0BE51CEA322900E9B47E /* ViewController.h */,
-				539F0BE61CEA322900E9B47E /* ViewController.m */,
-				539F0BE81CEA322900E9B47E /* Main.storyboard */,
-				539F0BEB1CEA322900E9B47E /* Assets.xcassets */,
-				539F0BED1CEA322900E9B47E /* LaunchScreen.storyboard */,
-				539F0BF01CEA322900E9B47E /* Info.plist */,
-				539F0BDF1CEA322900E9B47E /* Supporting Files */,
+				539F0BF61CEA331700E9B47E /* App */,
+				539F0BF91CEA331700E9B47E /* Model */,
+				539F0BFA1CEA331700E9B47E /* Modules */,
+				539F0BFB1CEA331700E9B47E /* Resources */,
+				539F0C011CEA331700E9B47E /* Service */,
+				539F0C021CEA331700E9B47E /* Supporting Files */,
+				539F0C051CEA331700E9B47E /* Vendor */,
 			);
 			path = AyyoTest;
 			sourceTree = "<group>";
 		};
-		539F0BDF1CEA322900E9B47E /* Supporting Files */ = {
+		539F0BF61CEA331700E9B47E /* App */ = {
 			isa = PBXGroup;
 			children = (
-				539F0BE01CEA322900E9B47E /* main.m */,
+				539F0BF71CEA331700E9B47E /* AppDelegate.h */,
+				539F0BF81CEA331700E9B47E /* AppDelegate.m */,
+				539F0C0C1CEA33E600E9B47E /* AYAppAssembly.h */,
+				539F0C0D1CEA33E600E9B47E /* AYAppAssembly.m */,
 			);
-			name = "Supporting Files";
+			path = App;
+			sourceTree = "<group>";
+		};
+		539F0BF91CEA331700E9B47E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		539F0BFA1CEA331700E9B47E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				539F0C331CEA39BA00E9B47E /* Movie */,
+				539F0C1B1CEA393F00E9B47E /* Start */,
+				539F0C0F1CEA345900E9B47E /* Root */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		539F0BFB1CEA331700E9B47E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				539F0BFC1CEA331700E9B47E /* Assets.xcassets */,
+				539F0BFD1CEA331700E9B47E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		539F0C011CEA331700E9B47E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		539F0C021CEA331700E9B47E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				539F0C031CEA331700E9B47E /* Info.plist */,
+				539F0C041CEA331700E9B47E /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		539F0C051CEA331700E9B47E /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		539F0C0F1CEA345900E9B47E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				539F0C101CEA346500E9B47E /* AYRootAssembly.h */,
+				539F0C111CEA346500E9B47E /* AYRootAssembly.m */,
+				539F0C131CEA347000E9B47E /* AYRootViewController.h */,
+				539F0C141CEA347000E9B47E /* AYRootViewController.m */,
+				539F0C161CEA349300E9B47E /* AYRootWireframe.h */,
+				539F0C171CEA349300E9B47E /* AYRootWireframe.m */,
+				539F0C191CEA351000E9B47E /* AYRootViewInput.h */,
+				539F0C1A1CEA351800E9B47E /* AYRootViewOutput.h */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		539F0C1B1CEA393F00E9B47E /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				539F0C1C1CEA393F00E9B47E /* AYStartAssembly.h */,
+				539F0C1D1CEA393F00E9B47E /* AYStartAssembly.m */,
+				539F0C1E1CEA393F00E9B47E /* AYStartViewController.h */,
+				539F0C1F1CEA393F00E9B47E /* AYStartViewController.m */,
+				539F0C201CEA393F00E9B47E /* AYStartViewInput.h */,
+				539F0C211CEA393F00E9B47E /* AYStartViewOutput.h */,
+				539F0C221CEA393F00E9B47E /* AYStartWireframe.h */,
+				539F0C231CEA393F00E9B47E /* AYStartWireframe.m */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		539F0C331CEA39BA00E9B47E /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				539F0C341CEA39BA00E9B47E /* AYMovieAssembly.h */,
+				539F0C351CEA39BA00E9B47E /* AYMovieAssembly.m */,
+				539F0C361CEA39BA00E9B47E /* AYMovieViewController.h */,
+				539F0C371CEA39BA00E9B47E /* AYMovieViewController.m */,
+				539F0C381CEA39BA00E9B47E /* AYMovieViewInput.h */,
+				539F0C391CEA39BA00E9B47E /* AYMovieViewOutput.h */,
+				539F0C3A1CEA39BA00E9B47E /* AYMovieWireframe.h */,
+				539F0C3B1CEA39BA00E9B47E /* AYMovieWireframe.m */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		E32C342E7A01A72506869D06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64EA973F687D4FECA7EED9C5 /* libPods-AyyoTest.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 539F0BF31CEA322900E9B47E /* Build configuration list for PBXNativeTarget "AyyoTest" */;
 			buildPhases = (
+				18D97A8AA6796873CDB242C1 /* 📦 Check Pods Manifest.lock */,
 				539F0BD81CEA322900E9B47E /* Sources */,
 				539F0BD91CEA322900E9B47E /* Frameworks */,
 				539F0BDA1CEA322900E9B47E /* Resources */,
+				4537EE901DF225AE08C4F93B /* 📦 Embed Pods Frameworks */,
+				BE62C8C08CCBFB99C95A61C8 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -105,6 +258,7 @@
 		539F0BD41CEA322900E9B47E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AY;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = igrampe;
 				TargetAttributes = {
@@ -136,40 +290,88 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				539F0BEF1CEA322900E9B47E /* LaunchScreen.storyboard in Resources */,
-				539F0BEC1CEA322900E9B47E /* Assets.xcassets in Resources */,
-				539F0BEA1CEA322900E9B47E /* Main.storyboard in Resources */,
+				539F0C071CEA331700E9B47E /* Assets.xcassets in Resources */,
+				539F0C081CEA331700E9B47E /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18D97A8AA6796873CDB242C1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4537EE901DF225AE08C4F93B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AyyoTest/Pods-AyyoTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE62C8C08CCBFB99C95A61C8 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AyyoTest/Pods-AyyoTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		539F0BD81CEA322900E9B47E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				539F0BE71CEA322900E9B47E /* ViewController.m in Sources */,
-				539F0BE41CEA322900E9B47E /* AppDelegate.m in Sources */,
-				539F0BE11CEA322900E9B47E /* main.m in Sources */,
+				539F0C151CEA347000E9B47E /* AYRootViewController.m in Sources */,
+				539F0C3D1CEA39BA00E9B47E /* AYMovieViewController.m in Sources */,
+				539F0C261CEA393F00E9B47E /* AYStartWireframe.m in Sources */,
+				539F0C251CEA393F00E9B47E /* AYStartViewController.m in Sources */,
+				539F0C0E1CEA33E600E9B47E /* AYAppAssembly.m in Sources */,
+				539F0C3E1CEA39BA00E9B47E /* AYMovieWireframe.m in Sources */,
+				539F0C121CEA346500E9B47E /* AYRootAssembly.m in Sources */,
+				539F0C0B1CEA331700E9B47E /* main.m in Sources */,
+				539F0C3C1CEA39BA00E9B47E /* AYMovieAssembly.m in Sources */,
+				539F0C181CEA349300E9B47E /* AYRootWireframe.m in Sources */,
+				539F0C061CEA331700E9B47E /* AppDelegate.m in Sources */,
+				539F0C241CEA393F00E9B47E /* AYStartAssembly.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		539F0BE81CEA322900E9B47E /* Main.storyboard */ = {
+		539F0BFD1CEA331700E9B47E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				539F0BE91CEA322900E9B47E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		539F0BED1CEA322900E9B47E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				539F0BEE1CEA322900E9B47E /* Base */,
+				539F0BFE1CEA331700E9B47E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -261,9 +463,12 @@
 		};
 		539F0BF41CEA322900E9B47E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2F9302A567EFB65975BF59 /* Pods-AyyoTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AyyoTest/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AyyoTest/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/AyyoTest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.igrampe.AyyoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,9 +477,12 @@
 		};
 		539F0BF51CEA322900E9B47E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02EBFB36552590F352CAF26A /* Pods-AyyoTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AyyoTest/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AyyoTest/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/AyyoTest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.igrampe.AyyoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +508,7 @@
 				539F0BF51CEA322900E9B47E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

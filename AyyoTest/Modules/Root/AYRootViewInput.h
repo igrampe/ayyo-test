@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  AYRootViewInput.h
 //  AyyoTest
 //
 //  Created by Semyon Belokovsky on 16/05/16.
 //  Copyright © 2016 igrampe. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
+@protocol AYRootViewInput <NSObject>
 
 @end
-

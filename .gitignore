@@ -28,3 +28,7 @@ xcuserdata/
 
 
 #!! ERROR: objectvive-c is undefined. Use list command to see defined gitignore types !!#
+AyyoTest.xcodeproj/xcuserdata
+AyyoTest.xcworkspace/xcuserdata
+Podfile.lock
+Pods
