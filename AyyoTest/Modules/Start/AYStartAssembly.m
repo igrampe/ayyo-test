@@ -10,11 +10,7 @@
 #import "AYStartViewController.h"
 #import "AYStartWireframe.h"
 
-#import "AYMovieAssembly.h"
-
 @interface AYStartAssembly ()
-
-@property (nonatomic, strong, readonly) AYMovieAssembly *movieAssembly;
 
 @end
 
@@ -37,8 +33,6 @@
     {
         [definition injectProperty:@selector(view)
                               with:[self viewStart]];
-        [definition injectProperty:@selector(movieWireframe)
-                              with:[self.movieAssembly wireframeMovie]];
     }];
 }
 

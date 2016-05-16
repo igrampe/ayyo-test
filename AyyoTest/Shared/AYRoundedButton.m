@@ -30,7 +30,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    self.layer.cornerRadius = CGRectGetWidth(self.bounds)/2;
+    self.layer.cornerRadius = CGRectGetHeight(self.bounds)/2;
 }
 
 @end

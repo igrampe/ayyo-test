@@ -12,6 +12,8 @@
 
 #import "AYMovieWireframe.h"
 
+#import "AYMovieAssembly.h"
+
 @implementation AYStartWireframe
 
 - (void)actionOpenMovie
@@ -26,6 +28,8 @@
 
 - (void)openMovieAnimated:(BOOL)animated
 {
+    AYMovieAssembly *movieAssembly = [[AYMovieAssembly new] activate];
+    self.movieWireframe = [movieAssembly wireframeMovie];
     [self.view.navigationController pushViewController:self.movieWireframe.view
                                               animated:animated];
 }

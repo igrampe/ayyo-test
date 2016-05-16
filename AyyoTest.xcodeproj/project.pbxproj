@@ -43,6 +43,17 @@
 		539F0C851CEA5B4900E9B47E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C821CEA5B4900E9B47E /* UIImage+ImageEffects.m */; };
 		539F0C861CEA5B4900E9B47E /* UIView+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C841CEA5B4900E9B47E /* UIView+Blur.m */; };
 		539F0C891CEA5C3200E9B47E /* AYBluredCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C881CEA5C3200E9B47E /* AYBluredCoverView.m */; };
+		539F0C8C1CEA5E2500E9B47E /* UIFont+App.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C8B1CEA5E2500E9B47E /* UIFont+App.m */; };
+		539F0C921CEA600B00E9B47E /* FuturaPTBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 539F0C8E1CEA600B00E9B47E /* FuturaPTBold.otf */; };
+		539F0C931CEA600B00E9B47E /* ProximaNovaRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 539F0C8F1CEA600B00E9B47E /* ProximaNovaRegular.otf */; };
+		539F0C941CEA600B00E9B47E /* ProximaNovaSemibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 539F0C901CEA600B00E9B47E /* ProximaNovaSemibold.otf */; };
+		539F0C951CEA600B00E9B47E /* ProximaNovaThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 539F0C911CEA600B00E9B47E /* ProximaNovaThin.otf */; };
+		539F0C9C1CEA642800E9B47E /* AYRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C9B1CEA642800E9B47E /* AYRatingView.m */; };
+		539F0C9F1CEA643D00E9B47E /* AYKinopoiskRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C9E1CEA643D00E9B47E /* AYKinopoiskRatingView.m */; };
+		539F0CA21CEA644A00E9B47E /* AYImdbRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0CA11CEA644A00E9B47E /* AYImdbRatingView.m */; };
+		539F0CA51CEA645E00E9B47E /* AYAgeRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0CA41CEA645E00E9B47E /* AYAgeRatingView.m */; };
+		539F0CA81CEA6DC200E9B47E /* AYIconRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0CA71CEA6DC200E9B47E /* AYIconRatingView.m */; };
+		539F0CAA1CEA737400E9B47E /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 539F0CA91CEA737400E9B47E /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +136,23 @@
 		539F0C841CEA5B4900E9B47E /* UIView+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Blur.m"; sourceTree = "<group>"; };
 		539F0C871CEA5C3200E9B47E /* AYBluredCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYBluredCoverView.h; sourceTree = "<group>"; };
 		539F0C881CEA5C3200E9B47E /* AYBluredCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYBluredCoverView.m; sourceTree = "<group>"; };
+		539F0C8A1CEA5E2500E9B47E /* UIFont+App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+App.h"; sourceTree = "<group>"; };
+		539F0C8B1CEA5E2500E9B47E /* UIFont+App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+App.m"; sourceTree = "<group>"; };
+		539F0C8E1CEA600B00E9B47E /* FuturaPTBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTBold.otf; sourceTree = "<group>"; };
+		539F0C8F1CEA600B00E9B47E /* ProximaNovaRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaRegular.otf; sourceTree = "<group>"; };
+		539F0C901CEA600B00E9B47E /* ProximaNovaSemibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaSemibold.otf; sourceTree = "<group>"; };
+		539F0C911CEA600B00E9B47E /* ProximaNovaThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaThin.otf; sourceTree = "<group>"; };
+		539F0C9A1CEA642800E9B47E /* AYRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYRatingView.h; sourceTree = "<group>"; };
+		539F0C9B1CEA642800E9B47E /* AYRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYRatingView.m; sourceTree = "<group>"; };
+		539F0C9D1CEA643D00E9B47E /* AYKinopoiskRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYKinopoiskRatingView.h; sourceTree = "<group>"; };
+		539F0C9E1CEA643D00E9B47E /* AYKinopoiskRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYKinopoiskRatingView.m; sourceTree = "<group>"; };
+		539F0CA01CEA644A00E9B47E /* AYImdbRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYImdbRatingView.h; sourceTree = "<group>"; };
+		539F0CA11CEA644A00E9B47E /* AYImdbRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYImdbRatingView.m; sourceTree = "<group>"; };
+		539F0CA31CEA645E00E9B47E /* AYAgeRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYAgeRatingView.h; sourceTree = "<group>"; };
+		539F0CA41CEA645E00E9B47E /* AYAgeRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYAgeRatingView.m; sourceTree = "<group>"; };
+		539F0CA61CEA6DC200E9B47E /* AYIconRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYIconRatingView.h; sourceTree = "<group>"; };
+		539F0CA71CEA6DC200E9B47E /* AYIconRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYIconRatingView.m; sourceTree = "<group>"; };
+		539F0CA91CEA737400E9B47E /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		64EA973F687D4FECA7EED9C5 /* libPods-AyyoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AyyoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2F9302A567EFB65975BF59 /* Pods-AyyoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyyoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AyyoTest/Pods-AyyoTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -218,6 +246,7 @@
 		539F0BFB1CEA331700E9B47E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				539F0C8D1CEA600B00E9B47E /* Fonts */,
 				539F0C6D1CEA40D400E9B47E /* ColorScheme.plist */,
 				539F0C6E1CEA40D400E9B47E /* ColorSchemeHeader.h */,
 				539F0BFC1CEA331700E9B47E /* Assets.xcassets */,
@@ -291,6 +320,7 @@
 				539F0C391CEA39BA00E9B47E /* AYMovieViewOutput.h */,
 				539F0C3A1CEA39BA00E9B47E /* AYMovieWireframe.h */,
 				539F0C3B1CEA39BA00E9B47E /* AYMovieWireframe.m */,
+				539F0CA91CEA737400E9B47E /* View.xib */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -343,6 +373,7 @@
 		539F0C761CEA514200E9B47E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				539F0C991CEA642800E9B47E /* Rating */,
 				539F0C771CEA516200E9B47E /* AYRoundedButton.h */,
 				539F0C781CEA516200E9B47E /* AYRoundedButton.m */,
 				539F0C7D1CEA54DE00E9B47E /* AYGradientView.h */,
@@ -360,8 +391,38 @@
 				539F0C821CEA5B4900E9B47E /* UIImage+ImageEffects.m */,
 				539F0C831CEA5B4900E9B47E /* UIView+Blur.h */,
 				539F0C841CEA5B4900E9B47E /* UIView+Blur.m */,
+				539F0C8A1CEA5E2500E9B47E /* UIFont+App.h */,
+				539F0C8B1CEA5E2500E9B47E /* UIFont+App.m */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		539F0C8D1CEA600B00E9B47E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				539F0C8E1CEA600B00E9B47E /* FuturaPTBold.otf */,
+				539F0C8F1CEA600B00E9B47E /* ProximaNovaRegular.otf */,
+				539F0C901CEA600B00E9B47E /* ProximaNovaSemibold.otf */,
+				539F0C911CEA600B00E9B47E /* ProximaNovaThin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		539F0C991CEA642800E9B47E /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+				539F0C9A1CEA642800E9B47E /* AYRatingView.h */,
+				539F0C9B1CEA642800E9B47E /* AYRatingView.m */,
+				539F0C9D1CEA643D00E9B47E /* AYKinopoiskRatingView.h */,
+				539F0C9E1CEA643D00E9B47E /* AYKinopoiskRatingView.m */,
+				539F0CA01CEA644A00E9B47E /* AYImdbRatingView.h */,
+				539F0CA11CEA644A00E9B47E /* AYImdbRatingView.m */,
+				539F0CA31CEA645E00E9B47E /* AYAgeRatingView.h */,
+				539F0CA41CEA645E00E9B47E /* AYAgeRatingView.m */,
+				539F0CA61CEA6DC200E9B47E /* AYIconRatingView.h */,
+				539F0CA71CEA6DC200E9B47E /* AYIconRatingView.m */,
+			);
+			path = Rating;
 			sourceTree = "<group>";
 		};
 		E32C342E7A01A72506869D06 /* Frameworks */ = {
@@ -434,8 +495,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				539F0C071CEA331700E9B47E /* Assets.xcassets in Resources */,
+				539F0C941CEA600B00E9B47E /* ProximaNovaSemibold.otf in Resources */,
 				539F0C6F1CEA40D400E9B47E /* ColorScheme.plist in Resources */,
 				539F0C081CEA331700E9B47E /* LaunchScreen.storyboard in Resources */,
+				539F0CAA1CEA737400E9B47E /* View.xib in Resources */,
+				539F0C951CEA600B00E9B47E /* ProximaNovaThin.otf in Resources */,
+				539F0C921CEA600B00E9B47E /* FuturaPTBold.otf in Resources */,
+				539F0C931CEA600B00E9B47E /* ProximaNovaRegular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +561,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				539F0C891CEA5C3200E9B47E /* AYBluredCoverView.m in Sources */,
+				539F0C9F1CEA643D00E9B47E /* AYKinopoiskRatingView.m in Sources */,
 				539F0C861CEA5B4900E9B47E /* UIView+Blur.m in Sources */,
 				539F0C611CEA40B600E9B47E /* APLFileSystem.m in Sources */,
 				539F0C651CEA40B600E9B47E /* APLView.m in Sources */,
@@ -505,19 +572,23 @@
 				539F0C251CEA393F00E9B47E /* AYStartViewController.m in Sources */,
 				539F0C791CEA516200E9B47E /* AYRoundedButton.m in Sources */,
 				539F0C601CEA40B600E9B47E /* APLColorScheme.m in Sources */,
+				539F0C8C1CEA5E2500E9B47E /* UIFont+App.m in Sources */,
 				539F0C731CEA4E2400E9B47E /* AYAppConfiguratorImp.m in Sources */,
 				539F0C0E1CEA33E600E9B47E /* AYAppAssembly.m in Sources */,
 				539F0C631CEA40B600E9B47E /* APLPageControl.m in Sources */,
 				539F0C6C1CEA40B600E9B47E /* APLServiceLocator.m in Sources */,
 				539F0C3E1CEA39BA00E9B47E /* AYMovieWireframe.m in Sources */,
 				539F0C121CEA346500E9B47E /* AYRootAssembly.m in Sources */,
+				539F0CA21CEA644A00E9B47E /* AYImdbRatingView.m in Sources */,
 				539F0C641CEA40B600E9B47E /* APLTextHelper.m in Sources */,
+				539F0C9C1CEA642800E9B47E /* AYRatingView.m in Sources */,
 				539F0C0B1CEA331700E9B47E /* main.m in Sources */,
 				539F0C6A1CEA40B600E9B47E /* UIColor+APL.m in Sources */,
 				539F0C5F1CEA40B600E9B47E /* APLBlocks.m in Sources */,
 				539F0C691CEA40B600E9B47E /* NSString+Utils.m in Sources */,
 				539F0C661CEA40B600E9B47E /* NSNotificationCenter+APL.m in Sources */,
 				539F0C3C1CEA39BA00E9B47E /* AYMovieAssembly.m in Sources */,
+				539F0CA81CEA6DC200E9B47E /* AYIconRatingView.m in Sources */,
 				539F0C621CEA40B600E9B47E /* APLKeyboardHelper.m in Sources */,
 				539F0C181CEA349300E9B47E /* AYRootWireframe.m in Sources */,
 				539F0C671CEA40B600E9B47E /* NSObject+APL.m in Sources */,
@@ -526,6 +597,7 @@
 				539F0C061CEA331700E9B47E /* AppDelegate.m in Sources */,
 				539F0C241CEA393F00E9B47E /* AYStartAssembly.m in Sources */,
 				539F0C681CEA40B600E9B47E /* NSString+Attributing.m in Sources */,
+				539F0CA51CEA645E00E9B47E /* AYAgeRatingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
