@@ -22,6 +22,21 @@
 		539F0C3C1CEA39BA00E9B47E /* AYMovieAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C351CEA39BA00E9B47E /* AYMovieAssembly.m */; };
 		539F0C3D1CEA39BA00E9B47E /* AYMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C371CEA39BA00E9B47E /* AYMovieViewController.m */; };
 		539F0C3E1CEA39BA00E9B47E /* AYMovieWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C3B1CEA39BA00E9B47E /* AYMovieWireframe.m */; };
+		539F0C5F1CEA40B600E9B47E /* APLBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C411CEA40B600E9B47E /* APLBlocks.m */; };
+		539F0C601CEA40B600E9B47E /* APLColorScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C431CEA40B600E9B47E /* APLColorScheme.m */; };
+		539F0C611CEA40B600E9B47E /* APLFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C451CEA40B600E9B47E /* APLFileSystem.m */; };
+		539F0C621CEA40B600E9B47E /* APLKeyboardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C471CEA40B600E9B47E /* APLKeyboardHelper.m */; };
+		539F0C631CEA40B600E9B47E /* APLPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C491CEA40B600E9B47E /* APLPageControl.m */; };
+		539F0C641CEA40B600E9B47E /* APLTextHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C4B1CEA40B600E9B47E /* APLTextHelper.m */; };
+		539F0C651CEA40B600E9B47E /* APLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C4D1CEA40B600E9B47E /* APLView.m */; };
+		539F0C661CEA40B600E9B47E /* NSNotificationCenter+APL.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C4F1CEA40B600E9B47E /* NSNotificationCenter+APL.m */; };
+		539F0C671CEA40B600E9B47E /* NSObject+APL.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C511CEA40B600E9B47E /* NSObject+APL.m */; };
+		539F0C681CEA40B600E9B47E /* NSString+Attributing.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C531CEA40B600E9B47E /* NSString+Attributing.m */; };
+		539F0C691CEA40B600E9B47E /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C551CEA40B600E9B47E /* NSString+Utils.m */; };
+		539F0C6A1CEA40B600E9B47E /* UIColor+APL.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C571CEA40B600E9B47E /* UIColor+APL.m */; };
+		539F0C6B1CEA40B600E9B47E /* UIViewController+APL.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C591CEA40B600E9B47E /* UIViewController+APL.m */; };
+		539F0C6C1CEA40B600E9B47E /* APLServiceLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0C5D1CEA40B600E9B47E /* APLServiceLocator.m */; };
+		539F0C6F1CEA40D400E9B47E /* ColorScheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 539F0C6D1CEA40D400E9B47E /* ColorScheme.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +74,38 @@
 		539F0C391CEA39BA00E9B47E /* AYMovieViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYMovieViewOutput.h; sourceTree = "<group>"; };
 		539F0C3A1CEA39BA00E9B47E /* AYMovieWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYMovieWireframe.h; sourceTree = "<group>"; };
 		539F0C3B1CEA39BA00E9B47E /* AYMovieWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYMovieWireframe.m; sourceTree = "<group>"; };
+		539F0C401CEA40B600E9B47E /* APLBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLBlocks.h; sourceTree = "<group>"; };
+		539F0C411CEA40B600E9B47E /* APLBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLBlocks.m; sourceTree = "<group>"; };
+		539F0C421CEA40B600E9B47E /* APLColorScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLColorScheme.h; sourceTree = "<group>"; };
+		539F0C431CEA40B600E9B47E /* APLColorScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLColorScheme.m; sourceTree = "<group>"; };
+		539F0C441CEA40B600E9B47E /* APLFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLFileSystem.h; sourceTree = "<group>"; };
+		539F0C451CEA40B600E9B47E /* APLFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLFileSystem.m; sourceTree = "<group>"; };
+		539F0C461CEA40B600E9B47E /* APLKeyboardHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLKeyboardHelper.h; sourceTree = "<group>"; };
+		539F0C471CEA40B600E9B47E /* APLKeyboardHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLKeyboardHelper.m; sourceTree = "<group>"; };
+		539F0C481CEA40B600E9B47E /* APLPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLPageControl.h; sourceTree = "<group>"; };
+		539F0C491CEA40B600E9B47E /* APLPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLPageControl.m; sourceTree = "<group>"; };
+		539F0C4A1CEA40B600E9B47E /* APLTextHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLTextHelper.h; sourceTree = "<group>"; };
+		539F0C4B1CEA40B600E9B47E /* APLTextHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLTextHelper.m; sourceTree = "<group>"; };
+		539F0C4C1CEA40B600E9B47E /* APLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLView.h; sourceTree = "<group>"; };
+		539F0C4D1CEA40B600E9B47E /* APLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLView.m; sourceTree = "<group>"; };
+		539F0C4E1CEA40B600E9B47E /* NSNotificationCenter+APL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+APL.h"; sourceTree = "<group>"; };
+		539F0C4F1CEA40B600E9B47E /* NSNotificationCenter+APL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+APL.m"; sourceTree = "<group>"; };
+		539F0C501CEA40B600E9B47E /* NSObject+APL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+APL.h"; sourceTree = "<group>"; };
+		539F0C511CEA40B600E9B47E /* NSObject+APL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+APL.m"; sourceTree = "<group>"; };
+		539F0C521CEA40B600E9B47E /* NSString+Attributing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Attributing.h"; sourceTree = "<group>"; };
+		539F0C531CEA40B600E9B47E /* NSString+Attributing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Attributing.m"; sourceTree = "<group>"; };
+		539F0C541CEA40B600E9B47E /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		539F0C551CEA40B600E9B47E /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		539F0C561CEA40B600E9B47E /* UIColor+APL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+APL.h"; sourceTree = "<group>"; };
+		539F0C571CEA40B600E9B47E /* UIColor+APL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+APL.m"; sourceTree = "<group>"; };
+		539F0C581CEA40B600E9B47E /* UIViewController+APL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+APL.h"; sourceTree = "<group>"; };
+		539F0C591CEA40B600E9B47E /* UIViewController+APL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+APL.m"; sourceTree = "<group>"; };
+		539F0C5B1CEA40B600E9B47E /* APLInteractorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLInteractorProtocol.h; sourceTree = "<group>"; };
+		539F0C5C1CEA40B600E9B47E /* APLServiceLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLServiceLocator.h; sourceTree = "<group>"; };
+		539F0C5D1CEA40B600E9B47E /* APLServiceLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLServiceLocator.m; sourceTree = "<group>"; };
+		539F0C5E1CEA40B600E9B47E /* APLWireframeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLWireframeProtocol.h; sourceTree = "<group>"; };
+		539F0C6D1CEA40D400E9B47E /* ColorScheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ColorScheme.plist; sourceTree = "<group>"; };
+		539F0C6E1CEA40D400E9B47E /* ColorSchemeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorSchemeHeader.h; sourceTree = "<group>"; };
 		64EA973F687D4FECA7EED9C5 /* libPods-AyyoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AyyoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2F9302A567EFB65975BF59 /* Pods-AyyoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyyoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AyyoTest/Pods-AyyoTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +194,8 @@
 		539F0BFB1CEA331700E9B47E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				539F0C6D1CEA40D400E9B47E /* ColorScheme.plist */,
+				539F0C6E1CEA40D400E9B47E /* ColorSchemeHeader.h */,
 				539F0BFC1CEA331700E9B47E /* Assets.xcassets */,
 				539F0BFD1CEA331700E9B47E /* LaunchScreen.storyboard */,
 			);
@@ -172,6 +221,7 @@
 		539F0C051CEA331700E9B47E /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				539F0C3F1CEA40B600E9B47E /* APL */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -219,6 +269,51 @@
 				539F0C3B1CEA39BA00E9B47E /* AYMovieWireframe.m */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		539F0C3F1CEA40B600E9B47E /* APL */ = {
+			isa = PBXGroup;
+			children = (
+				539F0C401CEA40B600E9B47E /* APLBlocks.h */,
+				539F0C411CEA40B600E9B47E /* APLBlocks.m */,
+				539F0C421CEA40B600E9B47E /* APLColorScheme.h */,
+				539F0C431CEA40B600E9B47E /* APLColorScheme.m */,
+				539F0C441CEA40B600E9B47E /* APLFileSystem.h */,
+				539F0C451CEA40B600E9B47E /* APLFileSystem.m */,
+				539F0C461CEA40B600E9B47E /* APLKeyboardHelper.h */,
+				539F0C471CEA40B600E9B47E /* APLKeyboardHelper.m */,
+				539F0C481CEA40B600E9B47E /* APLPageControl.h */,
+				539F0C491CEA40B600E9B47E /* APLPageControl.m */,
+				539F0C4A1CEA40B600E9B47E /* APLTextHelper.h */,
+				539F0C4B1CEA40B600E9B47E /* APLTextHelper.m */,
+				539F0C4C1CEA40B600E9B47E /* APLView.h */,
+				539F0C4D1CEA40B600E9B47E /* APLView.m */,
+				539F0C4E1CEA40B600E9B47E /* NSNotificationCenter+APL.h */,
+				539F0C4F1CEA40B600E9B47E /* NSNotificationCenter+APL.m */,
+				539F0C501CEA40B600E9B47E /* NSObject+APL.h */,
+				539F0C511CEA40B600E9B47E /* NSObject+APL.m */,
+				539F0C521CEA40B600E9B47E /* NSString+Attributing.h */,
+				539F0C531CEA40B600E9B47E /* NSString+Attributing.m */,
+				539F0C541CEA40B600E9B47E /* NSString+Utils.h */,
+				539F0C551CEA40B600E9B47E /* NSString+Utils.m */,
+				539F0C561CEA40B600E9B47E /* UIColor+APL.h */,
+				539F0C571CEA40B600E9B47E /* UIColor+APL.m */,
+				539F0C581CEA40B600E9B47E /* UIViewController+APL.h */,
+				539F0C591CEA40B600E9B47E /* UIViewController+APL.m */,
+				539F0C5A1CEA40B600E9B47E /* VIPER */,
+			);
+			path = APL;
+			sourceTree = "<group>";
+		};
+		539F0C5A1CEA40B600E9B47E /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				539F0C5B1CEA40B600E9B47E /* APLInteractorProtocol.h */,
+				539F0C5C1CEA40B600E9B47E /* APLServiceLocator.h */,
+				539F0C5D1CEA40B600E9B47E /* APLServiceLocator.m */,
+				539F0C5E1CEA40B600E9B47E /* APLWireframeProtocol.h */,
+			);
+			path = VIPER;
 			sourceTree = "<group>";
 		};
 		E32C342E7A01A72506869D06 /* Frameworks */ = {
@@ -291,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				539F0C071CEA331700E9B47E /* Assets.xcassets in Resources */,
+				539F0C6F1CEA40D400E9B47E /* ColorScheme.plist in Resources */,
 				539F0C081CEA331700E9B47E /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,18 +446,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539F0C611CEA40B600E9B47E /* APLFileSystem.m in Sources */,
+				539F0C651CEA40B600E9B47E /* APLView.m in Sources */,
 				539F0C151CEA347000E9B47E /* AYRootViewController.m in Sources */,
 				539F0C3D1CEA39BA00E9B47E /* AYMovieViewController.m in Sources */,
 				539F0C261CEA393F00E9B47E /* AYStartWireframe.m in Sources */,
+				539F0C6B1CEA40B600E9B47E /* UIViewController+APL.m in Sources */,
 				539F0C251CEA393F00E9B47E /* AYStartViewController.m in Sources */,
+				539F0C601CEA40B600E9B47E /* APLColorScheme.m in Sources */,
 				539F0C0E1CEA33E600E9B47E /* AYAppAssembly.m in Sources */,
+				539F0C631CEA40B600E9B47E /* APLPageControl.m in Sources */,
+				539F0C6C1CEA40B600E9B47E /* APLServiceLocator.m in Sources */,
 				539F0C3E1CEA39BA00E9B47E /* AYMovieWireframe.m in Sources */,
 				539F0C121CEA346500E9B47E /* AYRootAssembly.m in Sources */,
+				539F0C641CEA40B600E9B47E /* APLTextHelper.m in Sources */,
 				539F0C0B1CEA331700E9B47E /* main.m in Sources */,
+				539F0C6A1CEA40B600E9B47E /* UIColor+APL.m in Sources */,
+				539F0C5F1CEA40B600E9B47E /* APLBlocks.m in Sources */,
+				539F0C691CEA40B600E9B47E /* NSString+Utils.m in Sources */,
+				539F0C661CEA40B600E9B47E /* NSNotificationCenter+APL.m in Sources */,
 				539F0C3C1CEA39BA00E9B47E /* AYMovieAssembly.m in Sources */,
+				539F0C621CEA40B600E9B47E /* APLKeyboardHelper.m in Sources */,
 				539F0C181CEA349300E9B47E /* AYRootWireframe.m in Sources */,
+				539F0C671CEA40B600E9B47E /* NSObject+APL.m in Sources */,
 				539F0C061CEA331700E9B47E /* AppDelegate.m in Sources */,
 				539F0C241CEA393F00E9B47E /* AYStartAssembly.m in Sources */,
+				539F0C681CEA40B600E9B47E /* NSString+Attributing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
