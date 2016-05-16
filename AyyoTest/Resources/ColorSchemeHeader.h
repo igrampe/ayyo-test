@@ -13,5 +13,6 @@
 
 SSC(Color_White, @"White")
 SSC(Color_Black, @"Black")
+SSC(Color_Blue, @"Blue")
 
 #endif /* ColorSchemeHeader_h */
