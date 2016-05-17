@@ -11,4 +11,7 @@
 
 @protocol AYBuyMovieViewOutput <NSObject>
 
+- (void)viewDidLoad;
+- (void)actionCancel;
+
 @end

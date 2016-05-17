@@ -10,7 +10,25 @@
 #import "AYBuyMovieWireframe.h"
 
 #import "AYBuyMovieViewOutput.h"
+#import "AYBuyMovieViewInput.h"
 
 @implementation AYBuyMovieWireframe
+
+- (void)openInVC:(UIViewController *)inVC
+{
+    [self.view animateOpeningInView:inVC.view];    
+}
+
+#pragma mark - AYBuyMovieViewOutput
+
+- (void)viewDidLoad
+{
+    [self.view configureWithMovie:self.movie];
+}
+
+- (void)actionCancel
+{
+    
+}
 
 @end

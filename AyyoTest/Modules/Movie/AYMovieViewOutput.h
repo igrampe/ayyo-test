@@ -11,5 +11,6 @@
 @protocol AYMovieViewOutput <NSObject>
 
 - (void)viewDidLoad;
+- (void)actionWatchMovie;
 
 @end

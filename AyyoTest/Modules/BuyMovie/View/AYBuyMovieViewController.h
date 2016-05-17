@@ -8,10 +8,11 @@
 
 
 #import <UIKit/UIKit.h>
+#import "AYBuyMovieViewInput.h"
 
 @protocol AYBuyMovieViewOutput;
 
-@interface AYBuyMovieViewController : UIViewController
+@interface AYBuyMovieViewController : UIViewController <AYBuyMovieViewInput>
 
 @property (nonatomic, weak) id<AYBuyMovieViewOutput> output;
 

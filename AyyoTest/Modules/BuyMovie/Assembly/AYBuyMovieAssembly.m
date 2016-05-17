@@ -13,23 +13,23 @@
 
 @implementation AYBuyMovieAssembly
 
-- (AYBuyMovieViewController *)viewMovie
+- (AYBuyMovieViewController *)viewBuyMovie
 {
     return [TyphoonDefinition withClass:[AYBuyMovieViewController class]
                           configuration:^(TyphoonDefinition *definition)
     {
         [definition injectProperty:@selector(output)
-                              with:[self wireframeMovie]];
+                              with:[self wireframeBuyMovie]];
     }];
 }
 
-- (AYBuyMovieWireframe *)wireframeMovie
+- (AYBuyMovieWireframe *)wireframeBuyMovie
 {
     return [TyphoonDefinition withClass:[AYBuyMovieWireframe class]
                           configuration:^(TyphoonDefinition *definition)
     {
         [definition injectProperty:@selector(view)
-                              with:[self viewMovie]];
+                              with:[self viewBuyMovie]];
     }];
 }
 

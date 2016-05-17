@@ -7,8 +7,13 @@
 //
 
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@class AYMoviePonso;
 
 @protocol AYBuyMovieViewInput <NSObject>
+
+- (void)animateOpeningInView:(UIView *)inView;
+- (void)configureWithMovie:(AYMoviePonso *)movie;
 
 @end

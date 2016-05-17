@@ -11,10 +11,15 @@
 
 #import "AYBuyMovieViewOutput.h"
 
+@class AYMoviePonso;
 @protocol AYBuyMovieViewInput;
 
 @interface AYBuyMovieWireframe : NSObject <AYBuyMovieViewOutput>
 
+@property (nonatomic, strong) AYMoviePonso *movie;
+
 @property (nonatomic, strong) UIViewController<AYBuyMovieViewInput> *view;
+
+- (void)openInVC:(UIViewController *)inVC;
 
 @end

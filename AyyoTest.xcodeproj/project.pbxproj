@@ -13,6 +13,8 @@
 		53299B121CEB219F005D44B1 /* AYMoviePonso.m in Sources */ = {isa = PBXBuildFile; fileRef = 53299B111CEB219F005D44B1 /* AYMoviePonso.m */; };
 		53299B151CEB221B005D44B1 /* AYPricePonso.m in Sources */ = {isa = PBXBuildFile; fileRef = 53299B141CEB221B005D44B1 /* AYPricePonso.m */; };
 		53299B181CEB2288005D44B1 /* AYPriceValuePonso.m in Sources */ = {isa = PBXBuildFile; fileRef = 53299B171CEB2288005D44B1 /* AYPriceValuePonso.m */; };
+		532B6AE51CEB6DA0002B2B98 /* AYBuyMovieContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 532B6AE41CEB6DA0002B2B98 /* AYBuyMovieContainer.m */; };
+		532B6AE81CEB6FAC002B2B98 /* AYSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 532B6AE71CEB6FAC002B2B98 /* AYSegmentControl.m */; };
 		532D66161CEB2AE70019CAA8 /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D66131CEB2AE70019CAA8 /* cover.png */; };
 		532D66171CEB2AE70019CAA8 /* cover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D66141CEB2AE70019CAA8 /* cover@2x.png */; };
 		532D66181CEB2AE70019CAA8 /* cover@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D66151CEB2AE70019CAA8 /* cover@3x.png */; };
@@ -79,6 +81,10 @@
 		53299B141CEB221B005D44B1 /* AYPricePonso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYPricePonso.m; sourceTree = "<group>"; };
 		53299B161CEB2288005D44B1 /* AYPriceValuePonso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYPriceValuePonso.h; sourceTree = "<group>"; };
 		53299B171CEB2288005D44B1 /* AYPriceValuePonso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYPriceValuePonso.m; sourceTree = "<group>"; };
+		532B6AE31CEB6DA0002B2B98 /* AYBuyMovieContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYBuyMovieContainer.h; sourceTree = "<group>"; };
+		532B6AE41CEB6DA0002B2B98 /* AYBuyMovieContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYBuyMovieContainer.m; sourceTree = "<group>"; };
+		532B6AE61CEB6FAC002B2B98 /* AYSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYSegmentControl.h; sourceTree = "<group>"; };
+		532B6AE71CEB6FAC002B2B98 /* AYSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYSegmentControl.m; sourceTree = "<group>"; };
 		532D66131CEB2AE70019CAA8 /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
 		532D66141CEB2AE70019CAA8 /* cover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cover@2x.png"; sourceTree = "<group>"; };
 		532D66151CEB2AE70019CAA8 /* cover@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cover@3x.png"; sourceTree = "<group>"; };
@@ -509,6 +515,10 @@
 				8B8B00F431B272FDDA640779 /* AYBuyMovieViewOutput.h */,
 				70E417061EF17E93893B7E4C /* AYBuyMovieViewController.h */,
 				6593A2E9943C3A0D961FBD6A /* AYBuyMovieViewController.m */,
+				532B6AE31CEB6DA0002B2B98 /* AYBuyMovieContainer.h */,
+				532B6AE41CEB6DA0002B2B98 /* AYBuyMovieContainer.m */,
+				532B6AE61CEB6FAC002B2B98 /* AYSegmentControl.h */,
+				532B6AE71CEB6FAC002B2B98 /* AYSegmentControl.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -687,9 +697,11 @@
 				539F0C6A1CEA40B600E9B47E /* UIColor+APL.m in Sources */,
 				539F0C5F1CEA40B600E9B47E /* APLBlocks.m in Sources */,
 				53299B0E1CEB0828005D44B1 /* AYBookmarkButton.m in Sources */,
+				532B6AE81CEB6FAC002B2B98 /* AYSegmentControl.m in Sources */,
 				539F0C691CEA40B600E9B47E /* NSString+Utils.m in Sources */,
 				539F0C661CEA40B600E9B47E /* NSNotificationCenter+APL.m in Sources */,
 				53299B181CEB2288005D44B1 /* AYPriceValuePonso.m in Sources */,
+				532B6AE51CEB6DA0002B2B98 /* AYBuyMovieContainer.m in Sources */,
 				539F0C3C1CEA39BA00E9B47E /* AYMovieAssembly.m in Sources */,
 				539F0CA81CEA6DC200E9B47E /* AYIconRatingView.m in Sources */,
 				539F0C621CEA40B600E9B47E /* APLKeyboardHelper.m in Sources */,

@@ -115,6 +115,9 @@
     [self.watchButton setTitle:NSLS(@"СМОТРЕТЬ ФИЛЬМ") forState:UIControlStateNormal];
     [self.watchButton setBackgroundColor:APLCSC(Color_Blue)];
     self.watchButton.titleLabel.font = [UIFont ay_secondaryFontWithSize:12];
+    [self.watchButton addTarget:self.output
+                         action:@selector(actionWatchMovie)
+               forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.watchButton];
     
     self.bookmarkButton = [AYBookmarkButton newAutoLayoutView];
