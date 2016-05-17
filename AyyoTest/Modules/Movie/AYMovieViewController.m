@@ -24,6 +24,8 @@
 #import "AYTrailerButton.h"
 #import "AYBookmarkButton.h"
 
+#import "AYMoviePonso.h"
+
 @interface AYMovieViewController ()
 
 @property (nonatomic, assign) BOOL didSetupConstraints;
@@ -47,6 +49,8 @@
 @property (nonatomic, strong) AYRoundedButton *watchButton;
 @property (nonatomic, strong) AYBookmarkButton *bookmarkButton;
 
+@property (nonatomic, strong) NSLayoutConstraint *coverHeightConstraint;
+
 @end
 
 @implementation AYMovieViewController
@@ -56,6 +60,7 @@
     [super viewDidLoad];
     [self setupView];
     [self setupNavigationBar];
+    [self.output viewDidLoad];
 }
 
 - (void)setupView
@@ -73,7 +78,6 @@
     self.coverView = [UIImageView new];
     self.coverView.layer.borderWidth = 0.5;
     self.coverView.layer.borderColor = [[UIColor whiteColor] colorWithAlphaComponent:0.1].CGColor;
-    self.coverView.image = [UIImage imageNamed:@"cover"];
     [self.scrollView addSubview:self.coverView];
     
     self.trailerButton = [AYTrailerButton newAutoLayoutView];
@@ -81,34 +85,19 @@
     
     self.titleLabel = [UILabel newAutoLayoutView];
     self.titleLabel.numberOfLines = 0;
-    self.titleLabel.attributedText = [NSString attrubutedStringWithLineSpace:21.5
-                                                                        font:[UIFont ay_secondaryFontWithSize:18]
-                                                                   charSpace:0
-                                                                       color:APLCSC(Color_White)
-                                                                   alignment:NSTextAlignmentCenter
-                                                                       value:@"Первый Мститель:\nПротивостояние"];
     [self.scrollView addSubview:self.titleLabel];
     
     self.subtitleLabel = [UILabel newAutoLayoutView];
     self.subtitleLabel.numberOfLines = 0;
-    self.subtitleLabel.attributedText = [NSString attrubutedStringWithLineSpace:13
-                                                                           font:[UIFont ay_secondaryFontWithSize:11]
-                                                                      charSpace:0.92
-                                                                          color:[APLCSC(Color_White) colorWithAlphaComponent:0.5]
-                                                                      alignment:NSTextAlignmentCenter
-                                                                          value:@"CIVIL WAR (2016)"];
     [self.scrollView addSubview:self.subtitleLabel];
     
     self.kinopoiskRatingView = [AYKinopoiskRatingView newAutoLayoutView];
-    [self.kinopoiskRatingView configureWithRaiting:@"9.1"];
     [self.scrollView addSubview:self.kinopoiskRatingView];
     
     self.imdbRatingView = [AYImdbRatingView newAutoLayoutView];
-    [self.imdbRatingView configureWithRaiting:@"9.1"];
     [self.scrollView addSubview:self.imdbRatingView];
     
     self.ageRatingView = [AYAgeRatingView newAutoLayoutView];
-    [self.ageRatingView configureWithRaiting:@"12+"];
     [self.scrollView addSubview:self.ageRatingView];
     
     self.descriptionContainer = [UIView newAutoLayoutView];
@@ -117,13 +106,6 @@
     self.descriptionView = [UITextView newAutoLayoutView];
     self.descriptionView.scrollEnabled = NO;
     self.descriptionView.backgroundColor = [UIColor clearColor];
-    NSString *descriptionValue = @"Мстители под руководством Капитана Америки оказываются участниками разрушительного инцидента, имеющего международный масштаб. Эти события заставляют правительство задуматься над тем, чтобы начать регулировать действия всех людей с особыми способностями, введя «Акт о регистрации супергероев», вынуждая их раскрыть свои личности и работать на правительственные службы.";
-    self.descriptionView.attributedText = [NSString attrubutedStringWithLineSpace:24
-                                                                             font:[UIFont ay_primaryFontWithSize:17]
-                                                                        charSpace:0
-                                                                            color:[APLCSC(Color_White) colorWithAlphaComponent:0.7]
-                                                                        alignment:NSTextAlignmentLeft
-                                                                            value:descriptionValue];
     [self.descriptionContainer addSubview:self.descriptionView];
     
     self.gradientView = [AYGradientView newAutoLayoutView];
@@ -167,8 +149,6 @@
         [self.scrollView autoPinEdgeToSuperviewEdge:ALEdgeTop];
         
         [self.coverView autoSetDimension:ALDimensionWidth toSize:150];
-        CGFloat ratio = self.coverView.image.size.height*150/self.coverView.image.size.width;
-        [self.coverView autoSetDimension:ALDimensionHeight toSize:ratio];
         [self.coverView autoPinEdgeToSuperviewEdge:ALEdgeTop];
         [self.coverView autoAlignAxisToSuperviewAxis:ALAxisVertical];
         
@@ -224,11 +204,57 @@
         
         self.didSetupConstraints = YES;
     }
+    
+    if (self.coverHeightConstraint)
+    {
+        [self.coverHeightConstraint autoRemove];
+    }
+    if (self.coverView.image)
+    {
+        CGFloat ratio = self.coverView.image.size.height*150/self.coverView.image.size.width;
+        self.coverHeightConstraint = [self.coverView autoSetDimension:ALDimensionHeight toSize:ratio];
+    }
 }
 
 - (void)goBack
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - AYMoviewViewInput
+
+- (void)configureWithMovie:(AYMoviePonso *)movie
+{
+    self.coverView.image = [UIImage imageWithContentsOfFile:movie.cover_url];
+    
+    self.titleLabel.attributedText = [NSString attrubutedStringWithLineSpace:21.5
+                                                                        font:[UIFont ay_secondaryFontWithSize:18]
+                                                                   charSpace:0
+                                                                       color:APLCSC(Color_White)
+                                                                   alignment:NSTextAlignmentCenter
+                                                                       value:movie.title];
+    
+    self.subtitleLabel.attributedText = [NSString attrubutedStringWithLineSpace:13
+                                                                           font:[UIFont ay_secondaryFontWithSize:11]
+                                                                      charSpace:0.92
+                                                                          color:[APLCSC(Color_White) colorWithAlphaComponent:0.5]
+                                                                      alignment:NSTextAlignmentCenter
+                                                                          value:movie.title_en];
+    
+    [self.kinopoiskRatingView configureWithRaiting:[NSString stringWithFormat:@"%@", movie.rating_kinopoisk]];
+    [self.imdbRatingView configureWithRaiting:[NSString stringWithFormat:@"%@", movie.rating_imdb]];
+    [self.ageRatingView configureWithRaiting:[NSString stringWithFormat:@"%@+", movie.rating_age]];
+    
+    self.descriptionView.attributedText = [NSString attrubutedStringWithLineSpace:24
+                                                                             font:[UIFont ay_primaryFontWithSize:17]
+                                                                        charSpace:0
+                                                                            color:[APLCSC(Color_White) colorWithAlphaComponent:0.7]
+                                                                        alignment:NSTextAlignmentLeft
+                                                                            value:movie.desc];
+    
+    [self.view setNeedsUpdateConstraints];
+    [self.view updateConstraintsIfNeeded];
+    [self.view layoutIfNeeded];
 }
 
 @end

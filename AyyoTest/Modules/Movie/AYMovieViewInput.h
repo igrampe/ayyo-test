@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class AYMoviePonso;
+
 @protocol AYMovieViewInput <NSObject>
+
+- (void)configureWithMovie:(AYMoviePonso *)movie;
 
 @end

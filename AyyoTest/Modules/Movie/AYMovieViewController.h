@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AYMovieViewInput.h"
 
 @protocol AYMovieViewOutput;
 
-@interface AYMovieViewController : UIViewController
+@interface AYMovieViewController : UIViewController <AYMovieViewInput>
 
 @property (nonatomic, weak) id<AYMovieViewOutput> output;
 

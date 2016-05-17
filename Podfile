@@ -1,5 +1,4 @@
 platform :ios, '9.0'
-project 'AyyoTest'
 
 inhibit_all_warnings!
 

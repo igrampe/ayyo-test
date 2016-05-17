@@ -10,4 +10,6 @@
 
 @protocol AYMovieViewOutput <NSObject>
 
+- (void)viewDidLoad;
+
 @end

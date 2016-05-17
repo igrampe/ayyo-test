@@ -9,7 +9,26 @@
 #import "AYMovieWireframe.h"
 
 #import "AYMovieViewOutput.h"
+#import "AYMovieViewInput.h"
+#import "AYMoviePonso.h"
+
+@interface AYMovieWireframe ()
+
+@property (nonatomic, strong) AYMoviePonso *movie;
+
+@end
 
 @implementation AYMovieWireframe
+
+- (void)viewDidLoad
+{
+    [self mock];
+    [self.view configureWithMovie:self.movie];
+}
+
+- (void)mock
+{
+    self.movie = [AYMoviePonso mock];
+}
 
 @end
