@@ -13,6 +13,7 @@
 
 #import "UIFont+App.h"
 #import "APLColorScheme.h"
+#import "NSString+Attributing.h"
 
 #import "AYRoundedButton.h"
 #import "AYGradientView.h"
@@ -20,7 +21,8 @@
 #import "AYAgeRatingView.h"
 #import "AYImdbRatingView.h"
 #import "AYKinopoiskRatingView.h"
-#import "NSString+Attributing.h"
+#import "AYTrailerButton.h"
+#import "AYBookmarkButton.h"
 
 @interface AYMovieViewController ()
 
@@ -30,6 +32,7 @@
 @property (nonatomic, strong) UIScrollView *scrollView;
 
 @property (nonatomic, strong) UIImageView *coverView;
+@property (nonatomic, strong) AYTrailerButton *trailerButton;
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *subtitleLabel;
 
@@ -42,6 +45,7 @@
 
 @property (nonatomic, strong) AYGradientView *gradientView;
 @property (nonatomic, strong) AYRoundedButton *watchButton;
+@property (nonatomic, strong) AYBookmarkButton *bookmarkButton;
 
 @end
 
@@ -72,6 +76,9 @@
     self.coverView.image = [UIImage imageNamed:@"cover"];
     [self.scrollView addSubview:self.coverView];
     
+    self.trailerButton = [AYTrailerButton newAutoLayoutView];
+    [self.scrollView addSubview:self.trailerButton];
+    
     self.titleLabel = [UILabel newAutoLayoutView];
     self.titleLabel.numberOfLines = 0;
     self.titleLabel.attributedText = [NSString attrubutedStringWithLineSpace:21.5
@@ -85,11 +92,11 @@
     self.subtitleLabel = [UILabel newAutoLayoutView];
     self.subtitleLabel.numberOfLines = 0;
     self.subtitleLabel.attributedText = [NSString attrubutedStringWithLineSpace:13
-                                                                        font:[UIFont ay_secondaryFontWithSize:11]
-                                                                   charSpace:0.92
-                                                                       color:[APLCSC(Color_White) colorWithAlphaComponent:0.5]
-                                                                   alignment:NSTextAlignmentCenter
-                                                                       value:@"CIVIL WAR (2016)"];
+                                                                           font:[UIFont ay_secondaryFontWithSize:11]
+                                                                      charSpace:0.92
+                                                                          color:[APLCSC(Color_White) colorWithAlphaComponent:0.5]
+                                                                      alignment:NSTextAlignmentCenter
+                                                                          value:@"CIVIL WAR (2016)"];
     [self.scrollView addSubview:self.subtitleLabel];
     
     self.kinopoiskRatingView = [AYKinopoiskRatingView newAutoLayoutView];
@@ -128,6 +135,9 @@
     self.watchButton.titleLabel.font = [UIFont ay_secondaryFontWithSize:12];
     [self.view addSubview:self.watchButton];
     
+    self.bookmarkButton = [AYBookmarkButton newAutoLayoutView];
+    [self.view addSubview:self.bookmarkButton];
+    
     [self.view setNeedsUpdateConstraints];
     [self.view updateConstraintsIfNeeded];
 }
@@ -162,23 +172,27 @@
         [self.coverView autoPinEdgeToSuperviewEdge:ALEdgeTop];
         [self.coverView autoAlignAxisToSuperviewAxis:ALAxisVertical];
         
-        [self.titleLabel autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.coverView];
+        [self.trailerButton autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.coverView withOffset:9];
+        [self.trailerButton autoAlignAxisToSuperviewAxis:ALAxisVertical];
+        [self.trailerButton autoSetDimension:ALDimensionHeight toSize:35];
+        [self.trailerButton autoSetDimension:ALDimensionWidth toSize:120];
+        
+        [self.titleLabel autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.trailerButton withOffset:20];
         [self.titleLabel autoAlignAxisToSuperviewAxis:ALAxisVertical];
         [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:38 relation:NSLayoutRelationGreaterThanOrEqual];
         [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:38 relation:NSLayoutRelationGreaterThanOrEqual];
         
-        [self.subtitleLabel autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.titleLabel];
+        [self.subtitleLabel autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.titleLabel withOffset:5];
         [self.subtitleLabel autoAlignAxisToSuperviewAxis:ALAxisVertical];
         [self.subtitleLabel autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:38 relation:NSLayoutRelationGreaterThanOrEqual];
         [self.subtitleLabel autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:38 relation:NSLayoutRelationGreaterThanOrEqual];
         
         [self.kinopoiskRatingView autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.subtitleLabel withOffset:8];
         [self.kinopoiskRatingView autoAlignAxisToSuperviewAxis:ALAxisVertical];
-        [self.kinopoiskRatingView autoSetDimensionsToSize:CGSizeMake(32, 14)];
+        [self.kinopoiskRatingView autoSetDimension:ALDimensionHeight toSize:14];
         
         [self.imdbRatingView autoPinEdge:ALEdgeRight toEdge:ALEdgeLeft ofView:self.kinopoiskRatingView withOffset:-6];
         [self.imdbRatingView autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.kinopoiskRatingView];
-        [self.imdbRatingView autoSetDimensionsToSize:CGSizeMake(43, 14)];
         
         [self.ageRatingView autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:self.kinopoiskRatingView withOffset:8];
         [self.ageRatingView autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.kinopoiskRatingView];
@@ -198,6 +212,10 @@
         [self.gradientView autoPinEdgeToSuperviewEdge:ALEdgeRight];
         [self.gradientView autoPinEdgeToSuperviewEdge:ALEdgeBottom];
         [self.gradientView autoSetDimension:ALDimensionHeight toSize:121];
+        
+        [self.bookmarkButton autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:self.watchButton withOffset:10];
+        [self.bookmarkButton autoSetDimensionsToSize:[self.bookmarkButton size]];
+        [self.bookmarkButton autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.watchButton];
         
         [self.watchButton autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:25];
         [self.watchButton autoSetDimension:ALDimensionHeight toSize:50];

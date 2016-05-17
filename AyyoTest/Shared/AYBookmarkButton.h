@@ -1,5 +1,5 @@
 //
-//  AYRoundedButton.h
+//  AYBookmarkButton.h
 //  AyyoTest
 //
 //  Created by Semyon Belokovsky on 17/05/16.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AYRoundedButton : UIButton
+@interface AYBookmarkButton : UIButton
 
-- (void)setupView;
+- (CGSize)size;
 
 @end

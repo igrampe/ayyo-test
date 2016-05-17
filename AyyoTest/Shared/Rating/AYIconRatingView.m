@@ -7,10 +7,12 @@
 //
 
 #import "AYIconRatingView.h"
+#import <PureLayout.h>
 
 @interface AYIconRatingView ()
 
 @property (nonatomic, strong) UIImageView *icon;
+@property (nonatomic, assign) BOOL didSetupConstraints;
 
 @end
 
@@ -24,16 +26,21 @@
     [self addSubview:self.icon];
 }
 
-- (void)layoutSubviews
+- (void)updateConstraints
 {
-    [super layoutSubviews];
-    CGSize iconSize = self.icon.image.size;
-    self.icon.frame = CGRectMake(0, (CGRectGetHeight(self.bounds)-iconSize.height)/2, iconSize.width, iconSize.height);
-    
-    CGSize textSize = [self.textLabel sizeThatFits:self.bounds.size];
-    self.textLabel.frame = CGRectMake(CGRectGetMaxX(self.icon.frame)+5,
-                                      (CGRectGetHeight(self.bounds)-textSize.height)/2,
-                                      textSize.width, textSize.height);
+    [super updateConstraints];
+    if (!self.didSetupConstraints)
+    {
+        [self.icon autoPinEdgeToSuperviewEdge:ALEdgeLeft];
+        [self.icon autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
+        [self.icon autoSetDimensionsToSize:self.icon.image.size];
+        
+        [self.textLabel autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:self.icon withOffset:5];
+        [self.textLabel autoPinEdgeToSuperviewEdge:ALEdgeRight];
+        [self.textLabel autoPinEdgeToSuperviewEdge:ALEdgeTop];
+        [self.textLabel autoPinEdgeToSuperviewEdge:ALEdgeBottom];
+        self.didSetupConstraints = YES;
+    }
 }
 
 - (NSString *)iconName

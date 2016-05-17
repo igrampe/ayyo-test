@@ -7,6 +7,13 @@
 //
 
 #import "AYAgeRatingView.h"
+#import <PureLayout.h>
+
+@interface AYAgeRatingView ()
+
+@property (nonatomic, assign) BOOL didSetupConstraints;
+
+@end
 
 @implementation AYAgeRatingView
 
@@ -17,6 +24,16 @@
     self.layer.borderColor = [[UIColor whiteColor] colorWithAlphaComponent:0.1].CGColor;
     self.layer.borderWidth = 1;
     self.layer.cornerRadius = 2.5;
+}
+
+- (void)updateConstraints
+{
+    [super updateConstraints];
+    if (!self.didSetupConstraints)
+    {
+        [self.textLabel autoPinEdgesToSuperviewEdges];
+        self.didSetupConstraints = YES;
+    }
 }
 
 - (void)layoutSubviews
