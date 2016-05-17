@@ -62,7 +62,6 @@
 		539F0CA21CEA644A00E9B47E /* AYImdbRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0CA11CEA644A00E9B47E /* AYImdbRatingView.m */; };
 		539F0CA51CEA645E00E9B47E /* AYAgeRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0CA41CEA645E00E9B47E /* AYAgeRatingView.m */; };
 		539F0CA81CEA6DC200E9B47E /* AYIconRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0CA71CEA6DC200E9B47E /* AYIconRatingView.m */; };
-		539F0CAA1CEA737400E9B47E /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 539F0CA91CEA737400E9B47E /* View.xib */; };
 		78F8DD12729E16E67EA74EC5 /* AYBuyMovieWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 760B810767BA2E900A43FB91 /* AYBuyMovieWireframe.m */; };
 		AF802DEF7CAC012FC3D2EB7D /* AYBuyMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6593A2E9943C3A0D961FBD6A /* AYBuyMovieViewController.m */; };
 /* End PBXBuildFile section */
@@ -177,7 +176,6 @@
 		539F0CA41CEA645E00E9B47E /* AYAgeRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYAgeRatingView.m; sourceTree = "<group>"; };
 		539F0CA61CEA6DC200E9B47E /* AYIconRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYIconRatingView.h; sourceTree = "<group>"; };
 		539F0CA71CEA6DC200E9B47E /* AYIconRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYIconRatingView.m; sourceTree = "<group>"; };
-		539F0CA91CEA737400E9B47E /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		64EA973F687D4FECA7EED9C5 /* libPods-AyyoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AyyoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6593A2E9943C3A0D961FBD6A /* AYBuyMovieViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AYBuyMovieViewController.m; sourceTree = "<group>"; };
 		70E417061EF17E93893B7E4C /* AYBuyMovieViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AYBuyMovieViewController.h; sourceTree = "<group>"; };
@@ -387,7 +385,6 @@
 				539F0C391CEA39BA00E9B47E /* AYMovieViewOutput.h */,
 				539F0C3A1CEA39BA00E9B47E /* AYMovieWireframe.h */,
 				539F0C3B1CEA39BA00E9B47E /* AYMovieWireframe.m */,
-				539F0CA91CEA737400E9B47E /* View.xib */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -602,7 +599,6 @@
 				532D66181CEB2AE70019CAA8 /* cover@3x.png in Resources */,
 				539F0C6F1CEA40D400E9B47E /* ColorScheme.plist in Resources */,
 				539F0C081CEA331700E9B47E /* LaunchScreen.storyboard in Resources */,
-				539F0CAA1CEA737400E9B47E /* View.xib in Resources */,
 				539F0C951CEA600B00E9B47E /* ProximaNovaThin.otf in Resources */,
 				539F0C921CEA600B00E9B47E /* FuturaPTBold.otf in Resources */,
 				539F0C931CEA600B00E9B47E /* ProximaNovaRegular.otf in Resources */,
