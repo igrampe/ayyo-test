@@ -85,6 +85,7 @@
 		532B6AE41CEB6DA0002B2B98 /* AYBuyMovieContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYBuyMovieContainer.m; sourceTree = "<group>"; };
 		532B6AE61CEB6FAC002B2B98 /* AYSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYSegmentControl.h; sourceTree = "<group>"; };
 		532B6AE71CEB6FAC002B2B98 /* AYSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYSegmentControl.m; sourceTree = "<group>"; };
+		532B6AEC1CEB7BED002B2B98 /* AYBuyMovieModuleOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AYBuyMovieModuleOutput.h; sourceTree = "<group>"; };
 		532D66131CEB2AE70019CAA8 /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
 		532D66141CEB2AE70019CAA8 /* cover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cover@2x.png"; sourceTree = "<group>"; };
 		532D66151CEB2AE70019CAA8 /* cover@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cover@3x.png"; sourceTree = "<group>"; };
@@ -219,6 +220,7 @@
 			children = (
 				E1999F3174634819BE25BE9A /* AYBuyMovieWireframe.h */,
 				760B810767BA2E900A43FB91 /* AYBuyMovieWireframe.m */,
+				532B6AEC1CEB7BED002B2B98 /* AYBuyMovieModuleOutput.h */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";

@@ -11,12 +11,18 @@
 
 #import "AYBuyMovieViewOutput.h"
 #import "AYBuyMovieViewInput.h"
+#import "AYBuyMovieModuleOutput.h"
 
 @implementation AYBuyMovieWireframe
 
 - (void)openInVC:(UIViewController *)inVC
 {
     [self.view animateOpeningInView:inVC.view];    
+}
+
+- (void)close
+{
+    [self.view animateClosing];
 }
 
 #pragma mark - AYBuyMovieViewOutput
@@ -28,7 +34,7 @@
 
 - (void)actionCancel
 {
-    
+    [self.output buyMovieModuleDidCancel:self];
 }
 
 @end

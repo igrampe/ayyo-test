@@ -112,6 +112,23 @@ static CGFloat const kAYBuyMovieViewControllerContainerHeight = 294;
     }];
 }
 
+- (void)animateClosing
+{
+    self.shouldShowContainer = NO;
+    [self.view setNeedsUpdateConstraints];
+    [self.view updateConstraintsIfNeeded];
+    
+    __weak typeof(self) welf = self;
+    [UIView animateWithDuration:0.25
+                     animations:
+     ^
+     {
+         welf.bgView.alpha = 0;
+         [welf.view layoutIfNeeded];
+     }];
+}
+
+
 - (void)configureWithMovie:(AYMoviePonso *)movie
 {
     NSMutableArray *arr = [NSMutableArray new];

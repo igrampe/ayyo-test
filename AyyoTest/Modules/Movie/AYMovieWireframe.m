@@ -15,7 +15,9 @@
 #import "AYBuyMovieAssembly.h"
 #import "AYBuyMovieWireframe.h"
 
-@interface AYMovieWireframe ()
+#import "AYBuyMovieModuleOutput.h"
+
+@interface AYMovieWireframe () <AYBuyMovieModuleOutput>
 
 @property (nonatomic, strong) AYMoviePonso *movie;
 
@@ -38,6 +40,15 @@
     [self openBuyMovieModule];
 }
 
+#pragma mark - 
+
+- (void)buyMovieModuleDidCancel:(AYBuyMovieWireframe *)module
+{
+    [module close];
+    [module.view removeFromParentViewController];
+    [module.view.view removeFromSuperview];
+}
+
 #pragma mark - Private
 
 - (void)openBuyMovieModule
@@ -49,6 +60,7 @@
     [self.view.navigationController.view addSubview:self.buyWireframe.view.view];
     [self.buyWireframe.view didMoveToParentViewController:self.view];
     self.buyWireframe.view.view.frame = self.view.navigationController.view.bounds;
+    self.buyWireframe.output = self;
     [self.buyWireframe openInVC:self.view];
 }
 

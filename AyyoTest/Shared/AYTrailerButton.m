@@ -9,6 +9,10 @@
 #import "AYTrailerButton.h"
 #import "UIFont+App.h"
 
+@interface AYTrailerButton ()
+
+@end
+
 @implementation AYTrailerButton
 
 - (void)setupView

@@ -13,13 +13,16 @@
 
 @class AYMoviePonso;
 @protocol AYBuyMovieViewInput;
+@protocol AYBuyMovieModuleOutput;
 
 @interface AYBuyMovieWireframe : NSObject <AYBuyMovieViewOutput>
 
 @property (nonatomic, strong) AYMoviePonso *movie;
 
 @property (nonatomic, strong) UIViewController<AYBuyMovieViewInput> *view;
+@property (nonatomic, weak) id<AYBuyMovieModuleOutput> output;
 
 - (void)openInVC:(UIViewController *)inVC;
+- (void)close;
 
 @end
