@@ -67,12 +67,19 @@
 		539F0CA51CEA645E00E9B47E /* AYAgeRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0CA41CEA645E00E9B47E /* AYAgeRatingView.m */; };
 		539F0CA81CEA6DC200E9B47E /* AYIconRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0CA71CEA6DC200E9B47E /* AYIconRatingView.m */; };
 		53BB7EC21CEC92A000379B2F /* AYLoadingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BB7EC11CEC92A000379B2F /* AYLoadingButton.m */; };
+		56D5FF25E27A86784E59A4DD /* AYBuySuccessWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED38B3A12D037179C95C325 /* AYBuySuccessWireframe.m */; };
 		78F8DD12729E16E67EA74EC5 /* AYBuyMovieWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 760B810767BA2E900A43FB91 /* AYBuyMovieWireframe.m */; };
+		975DCC3F25D649CD9AA1A13D /* AYBuySuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3FF2051F56C849DDA2347 /* AYBuySuccessViewController.m */; };
 		AF802DEF7CAC012FC3D2EB7D /* AYBuyMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6593A2E9943C3A0D961FBD6A /* AYBuyMovieViewController.m */; };
+		D664BA1D155047789D1A7EC9 /* AYBuySuccessAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 1109F10A4E752C87BFD07322 /* AYBuySuccessAssembly.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02EBFB36552590F352CAF26A /* Pods-AyyoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyyoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AyyoTest/Pods-AyyoTest.release.xcconfig"; sourceTree = "<group>"; };
+		0A1834262DB0A60743F1F901 /* AYBuySuccessViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AYBuySuccessViewOutput.h; sourceTree = "<group>"; };
+		1109F10A4E752C87BFD07322 /* AYBuySuccessAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AYBuySuccessAssembly.m; sourceTree = "<group>"; };
+		28ECD7304E72700CCE5CA1E1 /* AYBuySuccessAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AYBuySuccessAssembly.h; sourceTree = "<group>"; };
+		48E3FF2051F56C849DDA2347 /* AYBuySuccessViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AYBuySuccessViewController.m; sourceTree = "<group>"; };
 		4D02688779417F43C4482921 /* AYBuyMovieAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AYBuyMovieAssembly.m; sourceTree = "<group>"; };
 		53299B091CEB041A005D44B1 /* AYTrailerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYTrailerButton.h; sourceTree = "<group>"; };
 		53299B0A1CEB041A005D44B1 /* AYTrailerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYTrailerButton.m; sourceTree = "<group>"; };
@@ -192,15 +199,20 @@
 		539F0CA71CEA6DC200E9B47E /* AYIconRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYIconRatingView.m; sourceTree = "<group>"; };
 		53BB7EC01CEC92A000379B2F /* AYLoadingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYLoadingButton.h; sourceTree = "<group>"; };
 		53BB7EC11CEC92A000379B2F /* AYLoadingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYLoadingButton.m; sourceTree = "<group>"; };
+		53BB7EC31CECABB100379B2F /* AYBuySuccessModuleOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AYBuySuccessModuleOutput.h; sourceTree = "<group>"; };
 		64EA973F687D4FECA7EED9C5 /* libPods-AyyoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AyyoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6593A2E9943C3A0D961FBD6A /* AYBuyMovieViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AYBuyMovieViewController.m; sourceTree = "<group>"; };
 		70E417061EF17E93893B7E4C /* AYBuyMovieViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AYBuyMovieViewController.h; sourceTree = "<group>"; };
 		760B810767BA2E900A43FB91 /* AYBuyMovieWireframe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AYBuyMovieWireframe.m; sourceTree = "<group>"; };
+		7ED38B3A12D037179C95C325 /* AYBuySuccessWireframe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AYBuySuccessWireframe.m; sourceTree = "<group>"; };
 		8A2F9302A567EFB65975BF59 /* Pods-AyyoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyyoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AyyoTest/Pods-AyyoTest.debug.xcconfig"; sourceTree = "<group>"; };
 		8B8B00F431B272FDDA640779 /* AYBuyMovieViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AYBuyMovieViewOutput.h; sourceTree = "<group>"; };
 		950224EE63ACF208CEA1E99E /* AYBuyMovieAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AYBuyMovieAssembly.h; sourceTree = "<group>"; };
+		9DA783D498A5CFB8BC61B39B /* AYBuySuccessWireframe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AYBuySuccessWireframe.h; sourceTree = "<group>"; };
 		A61E373C46904809CF70C1CE /* AYBuyMovieViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AYBuyMovieViewInput.h; sourceTree = "<group>"; };
+		DB998ADE87AE44DAF8E59BBC /* AYBuySuccessViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AYBuySuccessViewInput.h; sourceTree = "<group>"; };
 		E1999F3174634819BE25BE9A /* AYBuyMovieWireframe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AYBuyMovieWireframe.h; sourceTree = "<group>"; };
+		F9B8D1E21B120B5FEDDF298C /* AYBuySuccessViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AYBuySuccessViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +234,16 @@
 				02EBFB36552590F352CAF26A /* Pods-AyyoTest.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3A44ACDA7D4E9ECE4242906E /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				9DA783D498A5CFB8BC61B39B /* AYBuySuccessWireframe.h */,
+				7ED38B3A12D037179C95C325 /* AYBuySuccessWireframe.m */,
+				53BB7EC31CECABB100379B2F /* AYBuySuccessModuleOutput.h */,
+			);
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		5136EB86D94B370937491CEB /* Wireframe */ = {
@@ -320,6 +342,7 @@
 				539F0C1B1CEA393F00E9B47E /* Start */,
 				539F0C0F1CEA345900E9B47E /* Root */,
 				CF278DBB996B58C5AE33B0E6 /* BuyMovie */,
+				C19A8381DD59742D5351C564 /* BuySuccess */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -510,6 +533,15 @@
 			path = Rating;
 			sourceTree = "<group>";
 		};
+		92361C2AF1977053C3353227 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				28ECD7304E72700CCE5CA1E1 /* AYBuySuccessAssembly.h */,
+				1109F10A4E752C87BFD07322 /* AYBuySuccessAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		A2263A2582398DBCF5AB6118 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
@@ -540,6 +572,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C19A8381DD59742D5351C564 /* BuySuccess */ = {
+			isa = PBXGroup;
+			children = (
+				92361C2AF1977053C3353227 /* Assembly */,
+				E89CCE69CC728702F83C9540 /* View */,
+				3A44ACDA7D4E9ECE4242906E /* Wireframe */,
+			);
+			path = BuySuccess;
+			sourceTree = "<group>";
+		};
 		CF278DBB996B58C5AE33B0E6 /* BuyMovie */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,6 +598,17 @@
 				64EA973F687D4FECA7EED9C5 /* libPods-AyyoTest.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E89CCE69CC728702F83C9540 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB998ADE87AE44DAF8E59BBC /* AYBuySuccessViewInput.h */,
+				0A1834262DB0A60743F1F901 /* AYBuySuccessViewOutput.h */,
+				F9B8D1E21B120B5FEDDF298C /* AYBuySuccessViewController.h */,
+				48E3FF2051F56C849DDA2347 /* AYBuySuccessViewController.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -738,6 +791,9 @@
 				534A74C1EFF1EE76028D9E45 /* AYBuyMovieAssembly.m in Sources */,
 				AF802DEF7CAC012FC3D2EB7D /* AYBuyMovieViewController.m in Sources */,
 				78F8DD12729E16E67EA74EC5 /* AYBuyMovieWireframe.m in Sources */,
+				D664BA1D155047789D1A7EC9 /* AYBuySuccessAssembly.m in Sources */,
+				975DCC3F25D649CD9AA1A13D /* AYBuySuccessViewController.m in Sources */,
+				56D5FF25E27A86784E59A4DD /* AYBuySuccessWireframe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
