@@ -13,9 +13,14 @@
 #import "AYBuyMovieViewInput.h"
 #import "AYBuyMovieModuleOutput.h"
 
-@interface AYBuyMovieWireframe ()
+#import "AYBuySuccessWireframe.h"
+#import "AYBuySuccessAssembly.h"
+
+@interface AYBuyMovieWireframe () <AYBuySuccessModuleOutput>
 
 @property (nonatomic, strong) NSTimer *buyTimer;
+
+@property (nonatomic, strong) AYBuySuccessWireframe *buySuccessWireframe;
 
 @end
 
@@ -61,12 +66,33 @@
                                                     repeats:NO];
 }
 
+#pragma mark - AYBuySuccessViewOutput
+
+- (void)buySuccessModuleDidCancel:(AYBuySuccessWireframe *)module
+{
+    if (module == self.buySuccessWireframe)
+    {
+        [self.buySuccessWireframe.view dismissViewControllerAnimated:YES completion:nil];
+        self.buySuccessWireframe = nil;
+        [self.output buyMovieModuleDidCancel:self];
+    }
+}
+
 #pragma mark - Private
 
 - (void)_triggerBuyTimer
 {
     self.buyTimer = nil;
     [self.view hideLoader];
+    [self _openBuySuccessModule];
+}
+
+- (void)_openBuySuccessModule
+{
+    AYBuySuccessAssembly *buySuccessAssembly = [[AYBuySuccessAssembly new] activate];
+    self.buySuccessWireframe = [buySuccessAssembly wireframeBuySuccess];
+    self.buySuccessWireframe.output = self;
+    [self.view presentViewController:self.buySuccessWireframe.view animated:YES completion:nil];
 }
 
 @end
