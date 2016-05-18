@@ -86,6 +86,9 @@
     [self.scrollView addSubview:self.trailerButtonContainer];
     
     self.trailerButton = [AYTrailerButton newAutoLayoutView];
+    [self.trailerButton addTarget:self.output
+                           action:@selector(actionTrailer)
+                 forControlEvents:UIControlEventTouchUpInside];
     [self.trailerButtonContainer.contentView addSubview:self.trailerButton];
     
     self.titleLabel = [UILabel newAutoLayoutView];

@@ -40,7 +40,16 @@
     [self openBuyMovieModule];
 }
 
-#pragma mark - 
+- (void)actionTrailer
+{
+    NSURL *url = [NSURL URLWithString:self.movie.trailer_url];
+    if ([[UIApplication sharedApplication] canOpenURL:url])
+    {
+        [[UIApplication sharedApplication] openURL:url];
+    }
+}
+
+#pragma mark -
 
 - (void)buyMovieModuleDidCancel:(AYBuyMovieWireframe *)module
 {

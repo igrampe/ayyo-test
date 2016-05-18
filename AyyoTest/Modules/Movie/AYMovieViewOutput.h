@@ -12,5 +12,6 @@
 
 - (void)viewDidLoad;
 - (void)actionWatchMovie;
+- (void)actionTrailer;
 
 @end
