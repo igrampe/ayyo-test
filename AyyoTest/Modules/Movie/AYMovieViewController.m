@@ -23,6 +23,7 @@
 #import "AYKinopoiskRatingView.h"
 #import "AYTrailerButton.h"
 #import "AYBookmarkButton.h"
+#import "AYBlurButtonContainer.h"
 
 #import "AYMoviePonso.h"
 
@@ -34,6 +35,7 @@
 @property (nonatomic, strong) UIScrollView *scrollView;
 
 @property (nonatomic, strong) UIImageView *coverView;
+@property (nonatomic, strong) AYBlurButtonContainer *trailerButtonContainer;
 @property (nonatomic, strong) AYTrailerButton *trailerButton;
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *subtitleLabel;
@@ -80,8 +82,11 @@
     self.coverView.layer.borderColor = [[UIColor whiteColor] colorWithAlphaComponent:0.1].CGColor;
     [self.scrollView addSubview:self.coverView];
     
+    self.trailerButtonContainer = [[AYBlurButtonContainer alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
+    [self.scrollView addSubview:self.trailerButtonContainer];
+    
     self.trailerButton = [AYTrailerButton newAutoLayoutView];
-    [self.scrollView addSubview:self.trailerButton];
+    [self.trailerButtonContainer.contentView addSubview:self.trailerButton];
     
     self.titleLabel = [UILabel newAutoLayoutView];
     self.titleLabel.numberOfLines = 0;
@@ -160,8 +165,10 @@
         [self.coverView autoPinEdgeToSuperviewEdge:ALEdgeTop];
         [self.coverView autoAlignAxisToSuperviewAxis:ALAxisVertical];
         
-        [self.trailerButton autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.coverView withOffset:9];
-        [self.trailerButton autoAlignAxisToSuperviewAxis:ALAxisVertical];
+        [self.trailerButtonContainer autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.coverView withOffset:9];
+        [self.trailerButtonContainer autoAlignAxisToSuperviewAxis:ALAxisVertical];
+        
+        [self.trailerButton autoPinEdgesToSuperviewEdges];
         [self.trailerButton autoSetDimension:ALDimensionHeight toSize:35];
         [self.trailerButton autoSetDimension:ALDimensionWidth toSize:120];
         

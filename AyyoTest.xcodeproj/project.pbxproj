@@ -67,6 +67,7 @@
 		539F0CA51CEA645E00E9B47E /* AYAgeRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0CA41CEA645E00E9B47E /* AYAgeRatingView.m */; };
 		539F0CA81CEA6DC200E9B47E /* AYIconRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0CA71CEA6DC200E9B47E /* AYIconRatingView.m */; };
 		53BB7EC21CEC92A000379B2F /* AYLoadingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BB7EC11CEC92A000379B2F /* AYLoadingButton.m */; };
+		53BB7EC61CECB51700379B2F /* AYBlurButtonContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BB7EC51CECB51700379B2F /* AYBlurButtonContainer.m */; };
 		56D5FF25E27A86784E59A4DD /* AYBuySuccessWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED38B3A12D037179C95C325 /* AYBuySuccessWireframe.m */; };
 		78F8DD12729E16E67EA74EC5 /* AYBuyMovieWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 760B810767BA2E900A43FB91 /* AYBuyMovieWireframe.m */; };
 		975DCC3F25D649CD9AA1A13D /* AYBuySuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3FF2051F56C849DDA2347 /* AYBuySuccessViewController.m */; };
@@ -200,6 +201,8 @@
 		53BB7EC01CEC92A000379B2F /* AYLoadingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYLoadingButton.h; sourceTree = "<group>"; };
 		53BB7EC11CEC92A000379B2F /* AYLoadingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYLoadingButton.m; sourceTree = "<group>"; };
 		53BB7EC31CECABB100379B2F /* AYBuySuccessModuleOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AYBuySuccessModuleOutput.h; sourceTree = "<group>"; };
+		53BB7EC41CECB51700379B2F /* AYBlurButtonContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYBlurButtonContainer.h; sourceTree = "<group>"; };
+		53BB7EC51CECB51700379B2F /* AYBlurButtonContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYBlurButtonContainer.m; sourceTree = "<group>"; };
 		64EA973F687D4FECA7EED9C5 /* libPods-AyyoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AyyoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6593A2E9943C3A0D961FBD6A /* AYBuyMovieViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AYBuyMovieViewController.m; sourceTree = "<group>"; };
 		70E417061EF17E93893B7E4C /* AYBuyMovieViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AYBuyMovieViewController.h; sourceTree = "<group>"; };
@@ -488,6 +491,8 @@
 				53299B0A1CEB041A005D44B1 /* AYTrailerButton.m */,
 				53299B0C1CEB0828005D44B1 /* AYBookmarkButton.h */,
 				53299B0D1CEB0828005D44B1 /* AYBookmarkButton.m */,
+				53BB7EC41CECB51700379B2F /* AYBlurButtonContainer.h */,
+				53BB7EC51CECB51700379B2F /* AYBlurButtonContainer.m */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -772,6 +777,7 @@
 				539F0C691CEA40B600E9B47E /* NSString+Utils.m in Sources */,
 				539F0C661CEA40B600E9B47E /* NSNotificationCenter+APL.m in Sources */,
 				53299B181CEB2288005D44B1 /* AYPriceValuePonso.m in Sources */,
+				53BB7EC61CECB51700379B2F /* AYBlurButtonContainer.m in Sources */,
 				532B6AE51CEB6DA0002B2B98 /* AYBuyMovieContainer.m in Sources */,
 				539F0C3C1CEA39BA00E9B47E /* AYMovieAssembly.m in Sources */,
 				532B6AF51CEB935E002B2B98 /* AYPriceCell.m in Sources */,

@@ -18,7 +18,7 @@
 - (void)setupView
 {
     [super setupView];
-    self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.15];
+//    self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.15];
     [self setImage:[UIImage imageNamed:@"trailer_play"] forState:UIControlStateNormal];
     [self setTitle:NSLS(@"ТРЕЙЛЕР") forState:UIControlStateNormal];
     self.titleLabel.font = [UIFont ay_secondaryFontWithSize:12];
