@@ -70,6 +70,9 @@ static CGFloat const kAYBuyMovieViewControllerContainerHeight = 294;
     [self.containerView addSubview:self.priceSlider];
     
     self.buyButton = [AYLoadingButton newAutoLayoutView];
+    [self.buyButton addTarget:self.output
+                       action:@selector(actionBuy)
+             forControlEvents:UIControlEventTouchUpInside];
     [self.containerView addSubview:self.buyButton];
     
     [self.view setNeedsUpdateConstraints];
@@ -177,7 +180,17 @@ static CGFloat const kAYBuyMovieViewControllerContainerHeight = 294;
     
     [self.view setNeedsUpdateConstraints];
     [self.view updateConstraintsIfNeeded];
-    [self.view layoutIfNeeded];
+    [self.view layoutIfNeeded];        
+}
+
+- (void)showLoader
+{
+    [self.buyButton startAnimating];
+}
+
+- (void)hideLoader
+{
+    [self.buyButton stopAnimating];
 }
 
 #pragma mark - AYSegmentControlDelegate

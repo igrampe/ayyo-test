@@ -13,5 +13,6 @@
 
 - (void)viewDidLoad;
 - (void)actionCancel;
+- (void)actionBuy;
 
 @end

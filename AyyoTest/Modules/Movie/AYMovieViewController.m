@@ -112,9 +112,14 @@
     [self.view addSubview:self.gradientView];
     
     self.watchButton = [AYRoundedButton newAutoLayoutView];
-    [self.watchButton setTitle:NSLS(@"СМОТРЕТЬ ФИЛЬМ") forState:UIControlStateNormal];
+    [self.watchButton setAttributedTitle:[NSString attrubutedStringWithLineSpace:0
+                                                                            font:[UIFont ay_secondaryFontWithSize:12]
+                                                                       charSpace:1
+                                                                           color:[UIColor whiteColor]
+                                                                       alignment:NSTextAlignmentCenter
+                                                                           value:NSLS(@"СМОТРЕТЬ ФИЛЬМ")]
+                                forState:UIControlStateNormal];
     [self.watchButton setBackgroundColor:APLCSC(Color_Blue)];
-    self.watchButton.titleLabel.font = [UIFont ay_secondaryFontWithSize:12];
     [self.watchButton addTarget:self.output
                          action:@selector(actionWatchMovie)
                forControlEvents:UIControlEventTouchUpInside];

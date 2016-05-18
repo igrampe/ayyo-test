@@ -13,6 +13,12 @@
 #import "AYBuyMovieViewInput.h"
 #import "AYBuyMovieModuleOutput.h"
 
+@interface AYBuyMovieWireframe ()
+
+@property (nonatomic, strong) NSTimer *buyTimer;
+
+@end
+
 @implementation AYBuyMovieWireframe
 
 - (void)openInVC:(UIViewController *)inVC
@@ -34,7 +40,33 @@
 
 - (void)actionCancel
 {
+    if (self.buyTimer)
+    {
+        return;
+    }
     [self.output buyMovieModuleDidCancel:self];
+}
+
+- (void)actionBuy
+{
+    if (self.buyTimer)
+    {
+        return;
+    }
+    [self.view showLoader];
+    self.buyTimer = [NSTimer scheduledTimerWithTimeInterval:3
+                                                     target:self
+                                                   selector:@selector(_triggerBuyTimer)
+                                                   userInfo:nil
+                                                    repeats:NO];
+}
+
+#pragma mark - Private
+
+- (void)_triggerBuyTimer
+{
+    self.buyTimer = nil;
+    [self.view hideLoader];
 }
 
 @end

@@ -16,5 +16,7 @@
 - (void)animateOpeningInView:(UIView *)inView;
 - (void)animateClosingWithHandler:(void (^)(void))handler;
 - (void)configureWithMovie:(AYMoviePonso *)movie;
+- (void)showLoader;
+- (void)hideLoader;
 
 @end

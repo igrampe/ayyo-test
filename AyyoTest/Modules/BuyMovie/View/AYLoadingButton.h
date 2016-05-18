@@ -10,4 +10,7 @@
 
 @interface AYLoadingButton : AYRoundedButton
 
+- (void)startAnimating;
+- (void)stopAnimating;
+
 @end
