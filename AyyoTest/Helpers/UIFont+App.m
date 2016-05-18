@@ -23,7 +23,7 @@
 
 + (UIFont *)ay_moviePriceFont
 {
-    return [UIFont fontWithName:@"ProximaNova-Semibold" size:60];
+    return [UIFont fontWithName:@"ProximaNovaT-Thin" size:60];
 }
 
 + (UIFont *)ay_movieRaitingFont

@@ -20,9 +20,9 @@
     [self.view animateOpeningInView:inVC.view];    
 }
 
-- (void)close
+- (void)closeWithHandler:(void (^)(void))handler
 {
-    [self.view animateClosing];
+    [self.view animateClosingWithHandler:handler];
 }
 
 #pragma mark - AYBuyMovieViewOutput

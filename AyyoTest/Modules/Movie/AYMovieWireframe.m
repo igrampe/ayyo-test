@@ -44,9 +44,19 @@
 
 - (void)buyMovieModuleDidCancel:(AYBuyMovieWireframe *)module
 {
-    [module close];
-    [module.view removeFromParentViewController];
-    [module.view.view removeFromSuperview];
+    __weak typeof(self) welf = self;
+    [UIView animateWithDuration:0.25
+                     animations:
+     ^
+    {
+        welf.view.view.transform = CGAffineTransformIdentity;
+    }];
+    [module closeWithHandler:
+     ^
+    {
+        [module.view removeFromParentViewController];
+        [module.view.view removeFromSuperview];
+    }];
 }
 
 #pragma mark - Private
@@ -62,6 +72,14 @@
     self.buyWireframe.view.view.frame = self.view.navigationController.view.bounds;
     self.buyWireframe.output = self;
     [self.buyWireframe openInVC:self.view];
+    
+    __weak typeof(self) welf = self;
+    [UIView animateWithDuration:0.25
+                     animations:
+     ^
+    {
+        welf.view.view.transform = CGAffineTransformScale(welf.view.view.transform, 0.9, 0.9);
+    }];
 }
 
 - (void)mock

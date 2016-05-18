@@ -15,6 +15,8 @@
 		53299B181CEB2288005D44B1 /* AYPriceValuePonso.m in Sources */ = {isa = PBXBuildFile; fileRef = 53299B171CEB2288005D44B1 /* AYPriceValuePonso.m */; };
 		532B6AE51CEB6DA0002B2B98 /* AYBuyMovieContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 532B6AE41CEB6DA0002B2B98 /* AYBuyMovieContainer.m */; };
 		532B6AE81CEB6FAC002B2B98 /* AYSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 532B6AE71CEB6FAC002B2B98 /* AYSegmentControl.m */; };
+		532B6AEF1CEB9159002B2B98 /* AYPriceSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 532B6AEE1CEB9159002B2B98 /* AYPriceSlider.m */; };
+		532B6AF51CEB935E002B2B98 /* AYPriceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 532B6AF41CEB935E002B2B98 /* AYPriceCell.m */; };
 		532D66161CEB2AE70019CAA8 /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D66131CEB2AE70019CAA8 /* cover.png */; };
 		532D66171CEB2AE70019CAA8 /* cover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D66141CEB2AE70019CAA8 /* cover@2x.png */; };
 		532D66181CEB2AE70019CAA8 /* cover@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D66151CEB2AE70019CAA8 /* cover@3x.png */; };
@@ -64,6 +66,7 @@
 		539F0CA21CEA644A00E9B47E /* AYImdbRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0CA11CEA644A00E9B47E /* AYImdbRatingView.m */; };
 		539F0CA51CEA645E00E9B47E /* AYAgeRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0CA41CEA645E00E9B47E /* AYAgeRatingView.m */; };
 		539F0CA81CEA6DC200E9B47E /* AYIconRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539F0CA71CEA6DC200E9B47E /* AYIconRatingView.m */; };
+		53BB7EC21CEC92A000379B2F /* AYLoadingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BB7EC11CEC92A000379B2F /* AYLoadingButton.m */; };
 		78F8DD12729E16E67EA74EC5 /* AYBuyMovieWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 760B810767BA2E900A43FB91 /* AYBuyMovieWireframe.m */; };
 		AF802DEF7CAC012FC3D2EB7D /* AYBuyMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6593A2E9943C3A0D961FBD6A /* AYBuyMovieViewController.m */; };
 /* End PBXBuildFile section */
@@ -86,6 +89,10 @@
 		532B6AE61CEB6FAC002B2B98 /* AYSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYSegmentControl.h; sourceTree = "<group>"; };
 		532B6AE71CEB6FAC002B2B98 /* AYSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYSegmentControl.m; sourceTree = "<group>"; };
 		532B6AEC1CEB7BED002B2B98 /* AYBuyMovieModuleOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AYBuyMovieModuleOutput.h; sourceTree = "<group>"; };
+		532B6AED1CEB9159002B2B98 /* AYPriceSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYPriceSlider.h; sourceTree = "<group>"; };
+		532B6AEE1CEB9159002B2B98 /* AYPriceSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYPriceSlider.m; sourceTree = "<group>"; };
+		532B6AF31CEB935E002B2B98 /* AYPriceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYPriceCell.h; sourceTree = "<group>"; };
+		532B6AF41CEB935E002B2B98 /* AYPriceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYPriceCell.m; sourceTree = "<group>"; };
 		532D66131CEB2AE70019CAA8 /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
 		532D66141CEB2AE70019CAA8 /* cover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cover@2x.png"; sourceTree = "<group>"; };
 		532D66151CEB2AE70019CAA8 /* cover@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cover@3x.png"; sourceTree = "<group>"; };
@@ -183,6 +190,8 @@
 		539F0CA41CEA645E00E9B47E /* AYAgeRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYAgeRatingView.m; sourceTree = "<group>"; };
 		539F0CA61CEA6DC200E9B47E /* AYIconRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYIconRatingView.h; sourceTree = "<group>"; };
 		539F0CA71CEA6DC200E9B47E /* AYIconRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYIconRatingView.m; sourceTree = "<group>"; };
+		53BB7EC01CEC92A000379B2F /* AYLoadingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYLoadingButton.h; sourceTree = "<group>"; };
+		53BB7EC11CEC92A000379B2F /* AYLoadingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYLoadingButton.m; sourceTree = "<group>"; };
 		64EA973F687D4FECA7EED9C5 /* libPods-AyyoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AyyoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6593A2E9943C3A0D961FBD6A /* AYBuyMovieViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AYBuyMovieViewController.m; sourceTree = "<group>"; };
 		70E417061EF17E93893B7E4C /* AYBuyMovieViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AYBuyMovieViewController.h; sourceTree = "<group>"; };
@@ -521,6 +530,12 @@
 				532B6AE41CEB6DA0002B2B98 /* AYBuyMovieContainer.m */,
 				532B6AE61CEB6FAC002B2B98 /* AYSegmentControl.h */,
 				532B6AE71CEB6FAC002B2B98 /* AYSegmentControl.m */,
+				532B6AED1CEB9159002B2B98 /* AYPriceSlider.h */,
+				532B6AEE1CEB9159002B2B98 /* AYPriceSlider.m */,
+				532B6AF31CEB935E002B2B98 /* AYPriceCell.h */,
+				532B6AF41CEB935E002B2B98 /* AYPriceCell.m */,
+				53BB7EC01CEC92A000379B2F /* AYLoadingButton.h */,
+				53BB7EC11CEC92A000379B2F /* AYLoadingButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -697,6 +712,7 @@
 				53299B121CEB219F005D44B1 /* AYMoviePonso.m in Sources */,
 				539F0C0B1CEA331700E9B47E /* main.m in Sources */,
 				539F0C6A1CEA40B600E9B47E /* UIColor+APL.m in Sources */,
+				53BB7EC21CEC92A000379B2F /* AYLoadingButton.m in Sources */,
 				539F0C5F1CEA40B600E9B47E /* APLBlocks.m in Sources */,
 				53299B0E1CEB0828005D44B1 /* AYBookmarkButton.m in Sources */,
 				532B6AE81CEB6FAC002B2B98 /* AYSegmentControl.m in Sources */,
@@ -705,11 +721,13 @@
 				53299B181CEB2288005D44B1 /* AYPriceValuePonso.m in Sources */,
 				532B6AE51CEB6DA0002B2B98 /* AYBuyMovieContainer.m in Sources */,
 				539F0C3C1CEA39BA00E9B47E /* AYMovieAssembly.m in Sources */,
+				532B6AF51CEB935E002B2B98 /* AYPriceCell.m in Sources */,
 				539F0CA81CEA6DC200E9B47E /* AYIconRatingView.m in Sources */,
 				539F0C621CEA40B600E9B47E /* APLKeyboardHelper.m in Sources */,
 				539F0C181CEA349300E9B47E /* AYRootWireframe.m in Sources */,
 				539F0C671CEA40B600E9B47E /* NSObject+APL.m in Sources */,
 				539F0C7F1CEA54DE00E9B47E /* AYGradientView.m in Sources */,
+				532B6AEF1CEB9159002B2B98 /* AYPriceSlider.m in Sources */,
 				539F0C851CEA5B4900E9B47E /* UIImage+ImageEffects.m in Sources */,
 				539F0C061CEA331700E9B47E /* AppDelegate.m in Sources */,
 				53299B0B1CEB041A005D44B1 /* AYTrailerButton.m in Sources */,

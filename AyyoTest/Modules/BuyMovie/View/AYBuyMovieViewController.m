@@ -15,13 +15,15 @@
 
 #import "AYBuyMovieContainer.h"
 #import "AYSegmentControl.h"
+#import "AYPriceSlider.h"
+#import "AYLoadingButton.h"
 
 #import "AYMoviePonso.h"
 #import "AYPricePonso.h"
 
 static CGFloat const kAYBuyMovieViewControllerContainerHeight = 294;
 
-@interface AYBuyMovieViewController () <AYSegmentControlDelegate>
+@interface AYBuyMovieViewController () <AYSegmentControlDelegate, AYPriceSliderDataSource>
 
 @property (nonatomic, assign) BOOL didSetupConstraints;
 
@@ -30,8 +32,13 @@ static CGFloat const kAYBuyMovieViewControllerContainerHeight = 294;
 @property (nonatomic, strong) NSLayoutConstraint *containerBottomConstraint;
 
 @property (nonatomic, strong) AYSegmentControl *segmentControl;
+@property (nonatomic, strong) AYPriceSlider *priceSlider;
+
+@property (nonatomic, strong) AYLoadingButton *buyButton;
 
 @property (nonatomic, assign) BOOL shouldShowContainer;
+
+@property (nonatomic, strong) AYMoviePonso *movie;
 
 @end
 
@@ -58,6 +65,13 @@ static CGFloat const kAYBuyMovieViewControllerContainerHeight = 294;
     self.segmentControl.delegate = self;
     [self.containerView.header addSubview:self.segmentControl];
     
+    self.priceSlider = [AYPriceSlider newAutoLayoutView];
+    self.priceSlider.dataSource = self;
+    [self.containerView addSubview:self.priceSlider];
+    
+    self.buyButton = [AYLoadingButton newAutoLayoutView];
+    [self.containerView addSubview:self.buyButton];
+    
     [self.view setNeedsUpdateConstraints];
     [self.view updateConstraintsIfNeeded];
     [self.view layoutIfNeeded];
@@ -79,6 +93,15 @@ static CGFloat const kAYBuyMovieViewControllerContainerHeight = 294;
         [self.segmentControl autoAlignAxisToSuperviewAxis:ALAxisVertical];
         [self.segmentControl autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
         [self.segmentControl autoSetDimension:ALDimensionHeight toSize:30];
+        
+        [self.priceSlider autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.containerView.header];
+        [self.priceSlider autoPinEdgeToSuperviewEdge:ALEdgeLeft];
+        [self.priceSlider autoPinEdgeToSuperviewEdge:ALEdgeRight];
+        [self.priceSlider autoSetDimension:ALDimensionHeight toSize:138];
+        
+        [self.buyButton autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:20];
+        [self.buyButton autoSetDimensionsToSize:CGSizeMake(212, 60)];
+        [self.buyButton autoAlignAxisToSuperviewAxis:ALAxisVertical];
         
         self.didSetupConstraints = YES;
     }
@@ -112,7 +135,7 @@ static CGFloat const kAYBuyMovieViewControllerContainerHeight = 294;
     }];
 }
 
-- (void)animateClosing
+- (void)animateClosingWithHandler:(void (^)(void))handler
 {
     self.shouldShowContainer = NO;
     [self.view setNeedsUpdateConstraints];
@@ -122,15 +145,23 @@ static CGFloat const kAYBuyMovieViewControllerContainerHeight = 294;
     [UIView animateWithDuration:0.25
                      animations:
      ^
-     {
-         welf.bgView.alpha = 0;
-         [welf.view layoutIfNeeded];
-     }];
+    {        
+        welf.bgView.alpha = 0;
+        [welf.view layoutIfNeeded];
+    } completion:
+     ^(BOOL finished)
+    {
+        if (handler)
+        {
+            handler();
+        }
+    }];
 }
 
 
 - (void)configureWithMovie:(AYMoviePonso *)movie
 {
+    self.movie = movie;
     NSMutableArray *arr = [NSMutableArray new];
     if (movie.price.buyValues.count)
     {
@@ -142,6 +173,8 @@ static CGFloat const kAYBuyMovieViewControllerContainerHeight = 294;
     }
     [self.segmentControl createItemsWithTitles:arr];
     
+    [self.priceSlider reloadData];
+    
     [self.view setNeedsUpdateConstraints];
     [self.view updateConstraintsIfNeeded];
     [self.view layoutIfNeeded];
@@ -151,7 +184,63 @@ static CGFloat const kAYBuyMovieViewControllerContainerHeight = 294;
 
 - (void)ay_segmentControlDidChangeValue:(AYSegmentControl *)segmentControl
 {
+    [self.priceSlider reloadData];
+}
+
+#pragma mark - AYPriceSliderDataSource
+
+- (NSInteger)numberOfItemsInSlider:(AYPriceSlider *)slider
+{
+    return [self _pricesForType:[self _priceType]].count;
+}
+
+- (AYPriceValuePonso *)objectAtIndex:(NSInteger)index
+{
+    AYPriceValuePonso *value = nil;
     
+    value = [self _pricesForType:[self _priceType]][index];
+    
+    return value;
+}
+
+#pragma mark - Private
+
+- (NSArray *)_pricesForType:(AYPriceType)priceType
+{
+    NSArray *result = nil;
+    
+    if (priceType == AYPriceTypeBuy)
+    {
+        result = self.movie.price.buyValues;
+    } else if (priceType == AYPriceTypeRent)
+    {
+        result = self.movie.price.rentValues;
+    }
+    
+    return result;
+}
+
+- (AYPriceType)_priceType
+{
+    AYPriceType type = AYPriceTypeBuy;
+    
+    NSInteger segmentedIndex = self.segmentControl.selectedIndex;
+    
+    if (segmentedIndex == 1)
+    {
+        type = AYPriceTypeRent;
+    } else
+    {
+        if (self.movie.price.buyValues.count)
+        {
+            type = AYPriceTypeBuy;
+        } else
+        {
+            type = AYPriceTypeRent;
+        }
+    }
+    
+    return type;
 }
 
 @end

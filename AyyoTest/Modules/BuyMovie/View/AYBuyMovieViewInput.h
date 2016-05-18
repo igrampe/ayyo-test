@@ -14,7 +14,7 @@
 @protocol AYBuyMovieViewInput <NSObject>
 
 - (void)animateOpeningInView:(UIView *)inView;
-- (void)animateClosing;
+- (void)animateClosingWithHandler:(void (^)(void))handler;
 - (void)configureWithMovie:(AYMoviePonso *)movie;
 
 @end

@@ -14,7 +14,7 @@
 {
     AYPriceValuePonso *object = [self mock];
     
-    object.qualityTitle = @"DVD";
+    object.qualityTitle = @"DVD-качество";
     object.value = buy?@299:@99;
     
     return object;

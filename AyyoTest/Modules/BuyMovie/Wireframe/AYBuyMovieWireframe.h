@@ -23,6 +23,6 @@
 @property (nonatomic, weak) id<AYBuyMovieModuleOutput> output;
 
 - (void)openInVC:(UIViewController *)inVC;
-- (void)close;
+- (void)closeWithHandler:(void (^)(void))handler;
 
 @end

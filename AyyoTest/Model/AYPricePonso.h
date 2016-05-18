@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, AYPriceType)
+{
+    AYPriceTypeBuy,
+    AYPriceTypeRent
+};
+
 @class AYPriceValuePonso;
 
 @interface AYPricePonso : NSObject
